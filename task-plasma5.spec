@@ -1,13 +1,14 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.2
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
 Requires:	oxygen
 Requires:	plasma5-bluedevil
 Requires:	sddm
+Requires:	sddm-kcm
 BuildArch:	noarch
 
 %description
