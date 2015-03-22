@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.2
-Release:	0.2
+Release:	0.3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
@@ -9,6 +9,7 @@ Requires:	oxygen
 Requires:	plasma5-bluedevil
 Requires:	sddm
 Requires:	sddm-kcm
+Requires:	sddm-theme-breeze
 BuildArch:	noarch
 
 %description
@@ -43,6 +44,7 @@ Suggests:	plasma5-applet-milou
 Requires:	plasma5-baloo
 Requires:	plasma5-decoration-aurorae
 Requires:	plasma5-desktop
+Requires:	plasma5-kde-gtk-config
 Requires:	plasma5-kdeplasma-addons
 Requires:	plasma5-khotkeys
 Requires:	plasma5-kinfocenter
