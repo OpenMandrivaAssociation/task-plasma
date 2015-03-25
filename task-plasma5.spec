@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
 Requires:	oxygen
-Requires:	plasma5-bluedevil
+Requires:	bluedevil
 Requires:	sddm
 BuildArch:	noarch
 
@@ -24,11 +24,10 @@ Group:		Graphical desktop/KDE
 # Basic
 Requires:	dbus-x11
 #Suggests:	phonon-gstreamer
-Suggests:	preload
-Suggests:	readahead
-Requires:	rosa-elementary-theme
-Requires:	rosa-icons
-Requires:	sni-qt
+#Requires:	some theme is needed
+Requires:	oxygen-icon-theme
+# (tpg) doubt we need this
+#Requires:	sni-qt
 Suggests:	task-pulseaudio
 Requires:	task-x11
 #Requires:	xsettings-kde
@@ -37,22 +36,28 @@ Requires:	breeze
 Requires:	frameworkintegration
 Requires:	kde-cli-tools
 Requires:	kinit
+Requires:	kded
 Requires:	kwrited
-Suggests:	plasma5-applet-milou
-Requires:	plasma5-baloo
-Requires:	plasma5-decoration-aurorae
-Requires:	plasma5-desktop
-Requires:	plasma5-kdeplasma-addons
-Requires:	plasma5-khotkeys
-Requires:	plasma5-kinfocenter
-Requires:	plasma5-kio-extras
-Requires:	plasma5-kscreen
-Requires:	plasma5-ksysguard
-Requires:	plasma5-kwin
-Requires:	plasma5-nm
-Requires:	plasma5-powerdevil
-Requires:	plasma5-systemsettings
+Requires:	kdeclarative
+Suggests:	milou
+Requires:	baloo5
+Requires:	plasma-desktop
+Requires:	plasma-framwework
+Requires:	plasma-workspace
+Requires:	kdeplasma-addons
+Requires:	khotkeys
+Requires:	kinfocenter
+Requires:	kio-extras
+Requires:	kscreen
+Requires:	kservice
+Requires:	ksysguard
+Requires:	kwin
+Requires:	plasma-nm5
+Requires:	powerdevil
+Requires:	systemsettings
+Requires:	solid
 
+Requires:	desktop-common-data
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
 minimal dependencies for running a minimal Plama 5 desktop environment.
