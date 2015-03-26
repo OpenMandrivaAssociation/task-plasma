@@ -42,7 +42,7 @@ Requires:	kdeclarative
 Suggests:	milou
 Requires:	baloo5
 Requires:	plasma-desktop
-Requires:	plasma-framwework
+Requires:	plasma-framework
 Requires:	plasma-workspace
 Requires:	kdeplasma-addons
 Requires:	khotkeys
