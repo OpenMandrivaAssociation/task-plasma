@@ -44,7 +44,7 @@ Requires:	baloo5
 Requires:	plasma-desktop
 Requires:	plasma-framework
 Requires:	plasma-workspace
-Requires:	kdeplasma-addons
+Requires:	kdeplasma-addons5
 Requires:	khotkeys
 Requires:	kinfocenter
 Requires:	kio-extras
