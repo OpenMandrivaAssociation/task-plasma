@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
 Requires:	oxygen
-Requires:	bluedevil
+Requires:	bluedevil5
 Requires:	sddm
 BuildArch:	noarch
 
