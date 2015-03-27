@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.2
-Release:	0.2
+Release:	0.3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
@@ -46,7 +46,7 @@ Requires:	plasma-framework
 Requires:	plasma-workspace
 Requires:	kdeplasma-addons5
 Requires:	khotkeys
-Requires:	kinfocenter
+Requires:	kinfocenter5
 Requires:	kio-extras
 Requires:	kscreen5
 Requires:	kservice
