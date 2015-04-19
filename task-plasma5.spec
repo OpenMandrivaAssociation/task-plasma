@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.2
-Release:	0.3
+Release:	0.4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
@@ -25,7 +25,7 @@ Group:		Graphical desktop/KDE
 Requires:	dbus-x11
 #Suggests:	phonon-gstreamer
 #Requires:	some theme is needed
-Requires:	oxygen-icon-theme
+Requires:	oxygen-icons
 # (tpg) doubt we need this
 #Requires:	sni-qt
 Suggests:	task-pulseaudio
