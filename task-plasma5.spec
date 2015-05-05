@@ -1,13 +1,14 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
-Version:	5.2
-Release:	0.4
+Version:	5.3
+Release:	0.1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
 Requires:	oxygen
 Requires:	bluedevil5
 Requires:	sddm
+Conflicts:	task-kde4
 BuildArch:	noarch
 
 %description
@@ -45,19 +46,26 @@ Requires:	plasma-desktop
 Requires:	plasma-framework
 Requires:	plasma-workspace
 Requires:	kdeplasma-addons5
+Requires:	kde-gtk-config5
 Requires:	khotkeys
 Requires:	kinfocenter5
 Requires:	kio-extras
+Requires:	kmenuedit
+Requires:	kmix
+Requires:	konsole
 Requires:	kscreen5
 Requires:	kservice
 Requires:	ksysguard
 Requires:	kwin
+Requires:	kwrited
+Requires:	phonon-gstreamer
 Requires:	plasma-nm5
 Requires:	powerdevil
 Requires:	systemsettings
 Requires:	solid
-
 Requires:	desktop-common-data
+Conflicts:	task-kde4-minimal
+
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
 minimal dependencies for running a minimal Plama 5 desktop environment.
