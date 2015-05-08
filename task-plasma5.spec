@@ -1,13 +1,18 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.3
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
+Requires:	breeze
 Requires:	oxygen
 Requires:	bluedevil5
 Requires:	sddm
+Requires:	muon
+Requires:	plasma-mediacenter
+Requires:	khelpcenter
+Requires:	plasma-workspace-wallpapers
 Conflicts:	task-kde4
 BuildArch:	noarch
 
@@ -27,6 +32,8 @@ Requires:	dbus-x11
 #Suggests:	phonon-gstreamer
 #Requires:	some theme is needed
 Requires:	oxygen-icons
+Requires:	oxygen-fonts
+Requires:	oxygen
 # (tpg) doubt we need this
 #Requires:	sni-qt
 Suggests:	task-pulseaudio
@@ -40,7 +47,7 @@ Requires:	kinit
 Requires:	kded
 Requires:	kwrited
 Requires:	kdeclarative
-Suggests:	milou
+Requires:	milou
 Requires:	baloo5
 Requires:	plasma-desktop
 Requires:	plasma-framework
@@ -48,7 +55,7 @@ Requires:	plasma-workspace
 Requires:	kdeplasma-addons5
 Requires:	kde-gtk-config5
 Requires:	khotkeys
-Requires:	kinfocenter5
+Requires:	kinfocenter
 Requires:	kio-extras
 Requires:	kmenuedit
 Requires:	kmix
@@ -56,13 +63,15 @@ Requires:	konsole
 Requires:	kscreen5
 Requires:	kservice
 Requires:	ksysguard
+Requires:	ksshaskpass
 Requires:	kwin
 Requires:	kwrited
 Requires:	phonon-gstreamer
-Requires:	plasma-nm5
+Requires:	plasma-nm
 Requires:	powerdevil
 Requires:	systemsettings
 Requires:	solid
+Requires:	polkit-kde-agent-1
 Requires:	desktop-common-data
 Conflicts:	task-kde4-minimal
 
