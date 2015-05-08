@@ -55,7 +55,7 @@ Requires:	plasma-workspace
 Requires:	kdeplasma-addons5
 Requires:	kde-gtk-config5
 Requires:	khotkeys
-Requires:	kinfocenter
+Requires:	kinfocenter5
 Requires:	kio-extras
 Requires:	kmenuedit
 Requires:	kmix
