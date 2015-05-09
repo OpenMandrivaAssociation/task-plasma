@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.3
-Release:	0.3
+Release:	0.4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
@@ -9,6 +9,7 @@ Requires:	breeze
 Requires:	oxygen
 Requires:	bluedevil5
 Requires:	sddm
+Requires:	sddm-kcm
 Requires:	muon
 Requires:	plasma-mediacenter
 # (tpg) disable it for now as it conflicts with kde-runtime
@@ -35,8 +36,7 @@ Requires:	dbus-x11
 Requires:	oxygen-icons
 Requires:	oxygen-fonts
 Requires:	oxygen
-# (tpg) doubt we need this
-#Requires:	sni-qt
+Requires:	sni-qt
 Suggests:	task-pulseaudio
 Requires:	task-x11
 #Requires:	xsettings-kde
