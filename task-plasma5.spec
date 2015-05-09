@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.3
-Release:	0.2
+Release:	0.3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
@@ -11,7 +11,8 @@ Requires:	bluedevil5
 Requires:	sddm
 Requires:	muon
 Requires:	plasma-mediacenter
-Requires:	khelpcenter
+# (tpg) disable it for now as it conflicts with kde-runtime
+#Requires:	khelpcenter
 Requires:	plasma-workspace-wallpapers
 Conflicts:	task-kde4
 BuildArch:	noarch
@@ -58,7 +59,8 @@ Requires:	khotkeys
 Requires:	kinfocenter5
 Requires:	kio-extras
 Requires:	kmenuedit
-Requires:	kmix
+# (tpg) disable it for now as it conflicts with kde-runtime
+#Requires:	kmix
 Requires:	konsole
 Requires:	kscreen5
 Requires:	kservice
