@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma5
 Version:	5.3
-Release:	0.4
+Release:	0.5
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma5-minimal
@@ -66,11 +66,12 @@ Requires:	kscreen5
 Requires:	kservice
 Requires:	ksysguard
 Requires:	ksshaskpass
-Requires:	kwin
+# Requires:	kwin-wayland
+Requires:	kwin-x11
 Requires:	kwrited
 Requires:	phonon-gstreamer
 Requires:	plasma-nm
-Requires:	powerdevil
+Requires:	powerdevil >= 5.3.0
 Requires:	systemsettings
 Requires:	solid
 Requires:	polkit-kde-agent-1
