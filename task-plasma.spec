@@ -1,10 +1,10 @@
 Summary:	Metapackage for Plasma 5
-Name:		task-plasma5
+Name:		task-plasma
 Version:	5.3
-Release:	0.5
+Release:	0.6
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Requires:	task-plasma5-minimal
+Requires:	task-plasma-minimal
 Requires:	breeze
 Requires:	oxygen
 Requires:	bluedevil5
@@ -17,6 +17,7 @@ Requires:	plasma-mediacenter
 Requires:	plasma-workspace-wallpapers
 Conflicts:	task-kde4
 BuildArch:	noarch
+%rename		task-plasma5 < 5.3-0.6
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
