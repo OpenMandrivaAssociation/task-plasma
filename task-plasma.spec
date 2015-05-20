@@ -8,6 +8,8 @@ Requires:	task-plasma-minimal
 Requires:	breeze
 Requires:	oxygen
 Requires:	bluedevil5
+Requires:	digikam
+Requires:	konversation
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	muon
@@ -41,6 +43,12 @@ Requires:	sni-qt
 Suggests:	task-pulseaudio
 Requires:	task-x11
 #Requires:	xsettings-kde
+# KDE4
+Requires:	ark
+Requires:	dolphin
+Requires:	gwenview
+Requires:	kmix
+
 # Plasma 5
 Requires:	breeze
 Requires:	frameworkintegration
@@ -60,8 +68,6 @@ Requires:	khotkeys
 Requires:	kinfocenter5
 Requires:	kio-extras
 Requires:	kmenuedit
-# (tpg) disable it for now as it conflicts with kde-runtime
-#Requires:	kmix
 Requires:	konsole
 Requires:	kscreen5
 Requires:	kservice
