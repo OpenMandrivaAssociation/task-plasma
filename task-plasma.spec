@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.3
-Release:	0.8
+Release:	0.9
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -9,6 +9,7 @@ Requires:	breeze
 Requires:	oxygen
 Requires:	bluedevil5
 Requires:	digikam
+Requires:	kopete
 # (tpg) kdepim
 Requires:	kleopatra
 Requires:	akregator
@@ -37,7 +38,8 @@ Requires:	okular
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	muon
-Requires:	khelpcenter
+# (tpg) still conflicst
+#Requires:	khelpcenter
 Requires:	plasma-mediacenter
 Requires:	plasma-workspace-wallpapers
 Requires:	print-manager
@@ -89,7 +91,7 @@ Requires:	plasma-workspace
 Requires:	kdeplasma-addons5
 Requires:	kde-gtk-config5
 Requires:	khotkeys
-Requires:	kinfocenter
+Requires:	kinfocenter5
 Requires:	kio-extras
 Requires:	kmenuedit
 Requires:	konsole
