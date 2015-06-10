@@ -9,14 +9,37 @@ Requires:	breeze
 Requires:	oxygen
 Requires:	bluedevil5
 Requires:	digikam
+# (tpg) kdepim
+Requires:	kleopatra
+Requires:	akregator
+Requires:	knode
+Requires:	importwizard
+Requires:	kaddressbook
+Requires:	kalarm
+Requires:	ktimetracker
+Requires:	kmail
+Requires:	kmailcvt
+Requires:	knotes
+Requires:	kontact
+Requires:	korganizer
+Requires:	ksendemail
+Requires:	kjots
+Requires:	storageservicemanager
+Requires:	blogilo
+# end pim
 Requires:	konversation
+Requires:	ksnapshot
+Requires:	ksaneplugin
+Requires:	krfb
+Requires:	kwalletmanager
+Requires:	kuser
+Requires:	okular
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	muon
 Requires:	plasma-mediacenter
-# (tpg) disable it for now as it conflicts with kde-runtime
-#Requires:	khelpcenter
 Requires:	plasma-workspace-wallpapers
+Requires:	print-manager
 Conflicts:	task-kde4
 BuildArch:	noarch
 %rename		task-plasma5 < 5.3-0.6
@@ -65,7 +88,7 @@ Requires:	plasma-workspace
 Requires:	kdeplasma-addons5
 Requires:	kde-gtk-config5
 Requires:	khotkeys
-Requires:	kinfocenter5
+Requires:	kinfocenter
 Requires:	kio-extras
 Requires:	kmenuedit
 Requires:	konsole
