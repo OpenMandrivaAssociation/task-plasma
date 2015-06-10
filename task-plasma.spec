@@ -37,6 +37,7 @@ Requires:	okular
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	muon
+Requires:	khelpcenter
 Requires:	plasma-mediacenter
 Requires:	plasma-workspace-wallpapers
 Requires:	print-manager
