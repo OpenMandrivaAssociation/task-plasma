@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.3
-Release:	0.9
+Release:	0.10
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -35,6 +35,7 @@ Requires:	krfb
 Requires:	kwalletmanager
 Requires:	kuser
 Requires:	okular
+Requires:	sonnet-hunspell
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	muon
