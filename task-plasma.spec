@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.3
-Release:	0.10
+Release:	0.11
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -28,6 +28,13 @@ Requires:	kjots
 Requires:	storageservicemanager
 Requires:	blogilo
 # end pim
+Requires:	ksystemlog
+Requires:	krdc
+Requires:	kdepasswd
+Requires:	kdenlive
+Requires:	kamera
+Requires:	kcalc
+Requires:	kwrite
 Requires:	konversation
 Requires:	ksnapshot
 Requires:	ksaneplugin
