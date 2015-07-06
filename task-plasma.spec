@@ -45,6 +45,7 @@ Requires:	okular
 Requires:	sonnet-hunspell
 Requires:	sddm
 Requires:	sddm-kcm
+Requires:	systemd-kcm
 Requires:	muon
 # (tpg) still conflicst
 #Requires:	khelpcenter
