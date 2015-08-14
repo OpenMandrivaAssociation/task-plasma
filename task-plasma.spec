@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.3
-Release:	0.13
+Release:	0.14
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -68,7 +68,6 @@ Summary:	Minimal dependencies needed for Plasma 5
 Group:		Graphical desktop/KDE
 # Basic
 Requires:	dbus-x11
-#Suggests:	phonon-gstreamer
 #Requires:	some theme is needed
 Requires:	oxygen-icons
 Requires:	oxygen-fonts
@@ -110,7 +109,7 @@ Requires:	ksshaskpass
 # Requires:	kwin-wayland
 Requires:	kwin-x11
 Requires:	kwrited
-Requires:	phonon-gstreamer
+Requires:	phonon4qt5-backend
 Requires:	plasma-nm
 Requires:	powerdevil >= 5.3.0
 Requires:	systemsettings
