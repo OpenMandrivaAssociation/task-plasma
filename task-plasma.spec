@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.3
-Release:	0.15
+Version:	5.4
+Release:	0.1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -10,22 +10,22 @@ Requires:	bluedevil5
 Requires:	digikam
 Requires:	kopete
 # (tpg) kdepim
-Requires:	kleopatra
-Requires:	akregator
-Requires:	knode
-Requires:	importwizard
-Requires:	kaddressbook
-Requires:	kalarm
-Requires:	ktimetracker
-Requires:	kmail
-Requires:	kmailcvt
-Requires:	knotes
-Requires:	kontact
-Requires:	korganizer
-Requires:	ksendemail
-Requires:	kjots
-Requires:	storageservicemanager
-Requires:	blogilo
+#Requires:	kleopatra
+#Requires:	akregator
+#Requires:	knode
+#Requires:	importwizard
+#Requires:	kaddressbook
+#Requires:	kalarm
+#Requires:	ktimetracker
+#Requires:	kmail
+#Requires:	kmailcvt
+#Requires:	knotes
+#Requires:	kontact
+#Requires:	korganizer
+#Requires:	ksendemail
+#Requires:	kjots
+#Requires:	storageservicemanager
+#Requires:	blogilo
 # end pim
 Requires:	ksystemlog
 Requires:	krdc
@@ -39,17 +39,20 @@ Requires:	ksnapshot
 Requires:	ksaneplugin
 Requires:	krfb
 Requires:	kwalletmanager
+#Requires:	kwallet-pam
 Requires:	kuser
 Requires:	okular
 Requires:	sonnet-hunspell
 Requires:	sddm
 Requires:	sddm-kcm
+Requires:	sddm-theme-breeze
 Requires:	systemd-kcm
 Requires:	muon
 Requires:	khelpcenter
 Requires:	plasma-mediacenter
 Requires:	plasma-workspace-wallpapers
 Requires:	print-manager
+Requires:	user-manager
 Conflicts:	task-kde4
 BuildArch:	noarch
 %rename		task-plasma5 < 5.3-0.6
@@ -77,7 +80,6 @@ Requires:	task-x11
 Requires:	ark
 Requires:	dolphin
 Requires:	gwenview
-Requires:	kmix
 
 # Plasma 5
 Requires:	breeze
@@ -89,6 +91,7 @@ Requires:	kwrited
 Requires:	kdeclarative
 Requires:	milou
 Requires:	baloo5
+Requires:	plasma-pa
 Requires:	plasma-desktop
 Requires:	plasma-framework
 Requires:	plasma-workspace
