@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.4
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -50,7 +50,8 @@ Requires:	systemd-kcm
 Requires:	muon
 Requires:	khelpcenter
 Requires:	plasma-mediacenter
-Requires:	plasma-workspace-wallpapers
+#Requires:	plasma-workspace-wallpapers
+Requires:	plasma5-applet-muonnotifier
 Requires:	print-manager
 Requires:	user-manager
 Conflicts:	task-kde4
