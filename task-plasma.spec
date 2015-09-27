@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.4
-Release:	0.2
+Release:	0.3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -10,22 +10,18 @@ Requires:	bluedevil5
 Requires:	digikam
 Requires:	kopete
 # (tpg) kdepim
-#Requires:	kleopatra
-#Requires:	akregator
-#Requires:	knode
-#Requires:	importwizard
-#Requires:	kaddressbook
-#Requires:	kalarm
-#Requires:	ktimetracker
-#Requires:	kmail
-#Requires:	kmailcvt
-#Requires:	knotes
-#Requires:	kontact
-#Requires:	korganizer
-#Requires:	ksendemail
-#Requires:	kjots
-#Requires:	storageservicemanager
-#Requires:	blogilo
+Requires:	kleopatra
+Requires:	akregator
+Requires:	importwizard
+Requires:	kaddressbook
+Requires:	kalarm
+Requires:	kmail
+Requires:	knotes
+Requires:	kontact
+Requires:	korganizer
+Requires:	storageservicemanager
+Requires:	blogilo
+Requires:	
 # end pim
 Requires:	ksystemlog
 Requires:	krdc
