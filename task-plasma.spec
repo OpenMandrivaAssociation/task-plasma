@@ -25,7 +25,6 @@ Requires:
 # end pim
 Requires:	ksystemlog
 Requires:	krdc
-Requires:	kdepasswd
 Requires:	kdenlive
 Requires:	kamera
 Requires:	kcalc
