@@ -7,7 +7,7 @@ Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
 Requires:	distro-plasma-config
 Requires:	bluedevil5
-Requires:	digikam
+#Requires:	digikam
 Requires:	kopete
 # (tpg) kdepim
 Requires:	kleopatra
@@ -21,7 +21,6 @@ Requires:	kontact
 Requires:	korganizer
 Requires:	storageservicemanager
 Requires:	blogilo
-Requires:	
 # end pim
 Requires:	ksystemlog
 Requires:	krdc
