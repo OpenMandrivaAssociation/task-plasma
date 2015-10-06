@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.4
-Release:	0.3
+Release:	0.4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -67,6 +67,7 @@ Group:		Graphical desktop/KDE
 Requires:	dbus-x11
 #Requires:	some theme is needed
 Requires:	oxygen-fonts
+Requires:	oxygen-icons
 Requires:	sni-qt
 Suggests:	task-pulseaudio
 Requires:	task-x11
