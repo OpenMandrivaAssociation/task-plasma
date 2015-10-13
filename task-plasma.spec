@@ -1,15 +1,35 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.4
-Release:	0.4
+Release:	0.5
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
 Requires:	distro-plasma-config
 Requires:	bluedevil5
-#Requires:	digikam
+Requires:	kwayland
+Requires:	digikam
 Requires:	kopete
+Requires:	kamoso
+Requires:	dolphin-plugins
+Requires:	audiocd-kio
+Requires:	ffmpegthumbs
+Requires:	kaccounts-integration
+Requires:	kaccounts-providers
+Requires:	kdenetwork-filesharing
+Requires:	kdenetwork-strigi-analyzers
+Requires:	kidentitymanagement
+Requires:	kremotecontrol
+Requires:	signon-kwallet-extension
+Requires:	zeroconf-ioslave
 # (tpg) kdepim
+Requires:	akonadi-archivemail-agent
+Requires:	akonadi-followupreminder-agent
+Requires:	akonadi-mailfilter-agent
+Requires:	akonadi-notes-agent
+Requires:	akonadi-sendlater-agent
+Requires:	akonadi-calendar
+Requires:	akonadi-search
 Requires:	kleopatra
 Requires:	akregator
 Requires:	importwizard
@@ -21,9 +41,15 @@ Requires:	kontact
 Requires:	korganizer
 Requires:	storageservicemanager
 Requires:	blogilo
+Requires:	akregator
+Requires:	contactthemeeditor
+Requires:	headerthemeeditor
+Requires:	kdepim-accountwizard
+Requires:	kincidenceeditor
 # end pim
 Requires:	ksystemlog
 Requires:	krdc
+Requires:	kremotecontrol
 Requires:	kdenlive
 Requires:	kamera
 Requires:	kcalc
@@ -33,7 +59,7 @@ Requires:	ksnapshot
 Requires:	ksaneplugin
 Requires:	krfb
 Requires:	kwalletmanager
-#Requires:	kwallet-pam
+Requires:	kwallet-pam
 Requires:	kuser
 Requires:	okular
 Requires:	sonnet-hunspell
@@ -45,7 +71,7 @@ Requires:	muon
 Requires:	khelpcenter
 Requires:	plasma-mediacenter
 #Requires:	plasma-workspace-wallpapers
-Requires:	plasma5-applet-muonnotifier
+Requires:	muon-notifier
 Requires:	print-manager
 Requires:	user-manager
 Conflicts:	task-kde4
@@ -102,7 +128,6 @@ Requires:	kscreen5
 Requires:	kservice
 Requires:	ksysguard
 Requires:	ksshaskpass
-# Requires:	kwin-wayland
 Requires:	kwin-x11
 Requires:	kwrited
 Requires:	phonon4qt5-backend
