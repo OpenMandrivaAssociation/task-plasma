@@ -8,7 +8,7 @@ Requires:	task-plasma-minimal
 Requires:	distro-plasma-config
 Requires:	bluedevil5
 Requires:	kwayland
-#Requires:	digikam
+Requires:	digikam
 Requires:	kopete
 Requires:	kamoso
 Requires:	dolphin-plugins
