@@ -51,6 +51,7 @@ Requires:	kremotecontrol
 Requires:	kdenlive
 Requires:	kamera
 Requires:	kcalc
+Requires:	kate
 Requires:	kwrite
 Requires:	konversation
 Requires:	ksnapshot
