@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.4
-Release:	0.8
+Release:	0.9
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -22,12 +22,14 @@ Requires:	kidentitymanagement
 Requires:	kremotecontrol
 Requires:	zeroconf-ioslave
 # (tpg) kdepim
+Requires:	akonadi-kde
 Requires:	akonadi-archivemail-agent
 Requires:	akonadi-followupreminder-agent
 Requires:	akonadi-mailfilter-agent
 Requires:	akonadi-notes-agent
 Requires:	akonadi-sendlater-agent
 Requires:	akonadi-search
+Requires:	akonadi-social-utils-data
 Requires:	kleopatra
 Requires:	akregator
 Requires:	importwizard
