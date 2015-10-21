@@ -21,6 +21,11 @@ Requires:	kdenetwork-strigi-analyzers
 Requires:	kidentitymanagement
 Requires:	kremotecontrol
 Requires:	zeroconf-ioslave
+Requires:	kaccesible
+Requires:	jovie
+Requires:	kdeconnect
+Requires:	kdegraphics-thumbnailers
+Requires:	kget
 # (tpg) kdepim
 Requires:	akonadi-kde
 Requires:	akonadi-archivemail-agent
@@ -54,6 +59,7 @@ Requires:	kdenlive
 Requires:	kamera
 Requires:	kcalc
 Requires:	kate
+Requires:	kgamma5
 Requires:	kwrite
 Requires:	konversation
 Requires:	ksnapshot
