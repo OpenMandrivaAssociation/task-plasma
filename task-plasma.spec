@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.4
-Release:	0.9
+Release:	0.10
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -21,7 +21,7 @@ Requires:	kdenetwork-strigi-analyzers
 Requires:	kidentitymanagement
 Requires:	kremotecontrol
 Requires:	zeroconf-ioslave
-Requires:	kaccesible
+Requires:	kaccessible
 Requires:	jovie
 Requires:	kdeconnect
 Requires:	kdegraphics-thumbnailers
