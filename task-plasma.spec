@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.4
-Release:	0.10
+Version:	5.5.0
+Release:	0.1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal
@@ -74,11 +74,11 @@ Requires:	sddm
 Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
 Requires:	systemd-kcm
-Requires:	muon
+Requires:	discover
 Requires:	khelpcenter
 Requires:	plasma-mediacenter
 #Requires:	plasma-workspace-wallpapers
-Requires:	muon-notifier
+Requires:	discover-notifier
 Requires:	print-manager
 Requires:	user-manager
 Conflicts:	task-kde4
@@ -121,9 +121,9 @@ Requires:	kdeclarative
 Requires:	milou
 Requires:	baloo5
 Requires:	plasma-pa
-Requires:	plasma-desktop
+Requires:	plasma-desktop >= %{version}
 Requires:	plasma-framework
-Requires:	plasma-workspace
+Requires:	plasma-workspace >= %{version}
 Requires:	kdeplasma-addons5
 Requires:	kde-gtk-config5
 Requires:	khotkeys
@@ -132,6 +132,7 @@ Requires:	kio-extras
 Requires:	kmenuedit
 Requires:	konsole
 Requires:	kscreen5
+Requires:	kscreenlocker
 Requires:	kservice
 Requires:	ksysguard
 Requires:	ksshaskpass
