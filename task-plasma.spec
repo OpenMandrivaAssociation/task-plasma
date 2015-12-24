@@ -62,7 +62,7 @@ Requires:	kate
 Requires:	kgamma5
 Requires:	kwrite
 Requires:	konversation
-Requires:	ksnapshot
+Requires:	spectacle
 Requires:	ksaneplugin
 Requires:	krfb
 Requires:	kwalletmanager
