@@ -1,14 +1,15 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.5.2
-Release:	0.2
+Version:	5.5.3
+Release:	0.1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Requires:	task-plasma-minimal
+Requires:	task-plasma-minimal >= %{version}
 Requires:	distro-plasma-config
 Requires:	bluedevil5
 Requires:	kwayland
-Requires:	digikam
+# (tpg) needs to be updated to KF5
+#Requires:	digikam
 Requires:	kopete
 Requires:	kamoso
 Requires:	dolphin-plugins
@@ -63,12 +64,14 @@ Requires:	kgamma5
 Requires:	kwrite
 Requires:	konversation
 Requires:	spectacle
-Requires:	ksaneplugin
+# (tpg) needs to be ported to KF5
+#Requires:	ksaneplugin
 Requires:	krfb
 Requires:	kwalletmanager
 Requires:	kwallet-pam
 Requires:	kuser
-Requires:	okular
+# (tpg) needs to be ported to KF5
+#Requires:	okular
 Requires:	sonnet-hunspell
 Requires:	sddm
 Requires:	sddm-kcm
@@ -77,6 +80,7 @@ Requires:	systemd-kcm
 Requires:	discover
 Requires:	khelpcenter
 Requires:	plasma-mediacenter
+# (tpg) we have our own wallpapers :)
 #Requires:	plasma-workspace-wallpapers
 Requires:	discover-notifier
 Requires:	print-manager
@@ -105,7 +109,6 @@ Requires:	sni-qt
 Suggests:	task-pulseaudio
 Requires:	task-x11
 #Requires:	xsettings-kde
-# KDE4
 Requires:	ark
 Requires:	dolphin
 Requires:	gwenview
@@ -117,7 +120,6 @@ Requires:	frameworkintegration
 Requires:	kde-cli-tools
 Requires:	kinit
 Requires:	kded
-Requires:	kwrited
 Requires:	kdeclarative
 Requires:	milou
 Requires:	baloo5
@@ -125,7 +127,7 @@ Requires:	plasma-pa
 Requires:	plasma-desktop >= %{version}
 Requires:	plasma-framework
 Requires:	plasma-workspace >= %{version}
-Requires:	kdeplasma-addons5
+Requires:	kdeplasma-addons >= %{version}
 Requires:	kde-gtk-config
 Requires:	khotkeys
 Requires:	kinfocenter5
