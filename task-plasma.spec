@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.5.3
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -112,6 +112,7 @@ Requires:	task-x11
 Requires:	ark
 Requires:	dolphin
 Requires:	gwenview
+Requires:	kde-l10n-en_GB
 
 # Plasma 5
 Requires:	breeze
