@@ -71,8 +71,9 @@ Requires:	kwalletmanager
 Requires:	kwallet-pam
 Requires:	kuser
 # (tpg) needs to be ported to KF5
-#Requires:	okular
+Requires:	okular
 Requires:	sonnet-hunspell
+Requires:	myspell-en_GB
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
