@@ -6,6 +6,7 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
 Requires:	distro-plasma-config
+Requires:	openmandriva-kde-icons
 Requires:	bluedevil5
 Requires:	kwayland
 # (tpg) needs to be updated to KF5
@@ -53,6 +54,7 @@ Requires:	headerthemeeditor
 Requires:	kdepim-accountwizard
 Requires:	kincidenceeditor
 # end pim
+Requires:	kdepasswd
 Requires:	ksystemlog
 Requires:	krdc
 Requires:	kremotecontrol
@@ -60,6 +62,7 @@ Requires:	kdenlive
 Requires:	kamera
 Requires:	kcalc
 Requires:	kate
+Requires:	kdf
 Requires:	kgamma5
 Requires:	kwrite
 Requires:	konversation
