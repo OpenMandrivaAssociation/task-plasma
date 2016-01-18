@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.5.3
-Release:	0.3
+Release:	0.4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -89,6 +89,7 @@ Requires:	plasma-mediacenter
 Requires:	discover-notifier
 Requires:	print-manager
 Requires:	user-manager
+Requires:	xscreensaver
 Conflicts:	task-kde4
 BuildArch:	noarch
 %rename		task-plasma5 < 5.3-0.6
