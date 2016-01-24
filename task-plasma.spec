@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.5.3
-Release:	0.5
+Release:	0.6
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -85,6 +85,7 @@ Requires:	systemd-kcm
 Requires:	discover
 Requires:	khelpcenter
 Requires:	plasma-mediacenter
+Requires:	partitionmanager
 # (tpg) we have our own wallpapers :)
 #Requires:	plasma-workspace-wallpapers
 Requires:	discover-notifier
