@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.5.4
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -77,6 +77,7 @@ Requires:	kuser
 # (tpg) needs to be ported to KF5
 Requires:	okular
 Requires:	sonnet-hunspell
+Requires:	speech-dispatcher
 Requires:	myspell-en_GB
 Requires:	sddm
 Requires:	sddm-kcm
