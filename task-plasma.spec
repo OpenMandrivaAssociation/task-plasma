@@ -1,12 +1,13 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.5.4
-Release:	0.2
+Release:	0.3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
 Requires:	distro-plasma-config
 Requires:	openmandriva-kde-icons
+Requires:	grub2-editor
 Requires:	bluedevil5
 Requires:	kwayland
 # (tpg) needs to be updated to KF5
