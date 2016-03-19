@@ -70,8 +70,7 @@ Requires:	kgamma5
 Requires:	kwrite
 Requires:	konversation
 Requires:	spectacle
-# (tpg) needs to be ported to KF5
-#Requires:	ksaneplugin
+Requires:	ksaneplugin
 Requires:	kipi-plugins
 Requires:	krfb
 Requires:	kwalletmanager
@@ -85,6 +84,7 @@ Requires:	myspell-en_GB
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
+Requires:	skanlite
 Requires:	systemd-kcm
 Requires:	discover
 Requires:	khelpcenter
