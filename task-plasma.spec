@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.5.5
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -14,6 +14,8 @@ Requires:	kwayland
 Requires:	digikam
 Requires:	kopete
 Requires:	kamoso
+Requires:	ktorrent
+Requires:	krita
 Requires:	dolphin-plugins
 Requires:	audiocd-kio
 Requires:	ffmpegthumbs
