@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.0
-Release:	0.2
+Release:	0.3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -140,11 +140,11 @@ Requires:	kdeclarative
 Requires:	milou
 Requires:	baloo5
 Requires:	plasma-pa
-Requires:	plasma-integration >= %{version}
+Requires:	plasma-integration
 Requires:	plasma-desktop >= %{version}
 Requires:	plasma-framework
 Requires:	plasma-workspace >= %{version}
-Requires:	kdeplasma-addons >= %{version}
+Requires:	kdeplasma-addons
 Requires:	kde-gtk-config
 Requires:	khotkeys
 Requires:	kinfocenter5
