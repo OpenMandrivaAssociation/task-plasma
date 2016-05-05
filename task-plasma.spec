@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.3
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -82,7 +82,7 @@ Requires:	kuser
 Requires:	okular
 Requires:	sonnet-hunspell
 Requires:	speech-dispatcher
-Requires:	myspell-en_GB
+Requires:	myspell-dictionary
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
@@ -128,7 +128,7 @@ Requires:	xsettings-kde
 Requires:	ark
 Requires:	dolphin
 Requires:	gwenview
-Requires:	kde-l10n-en_GB
+Requires:	kde-l10n
 Requires:	pinentry-qt5
 
 # Plasma 5
