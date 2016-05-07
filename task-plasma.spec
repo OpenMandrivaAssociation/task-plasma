@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.3
-Release:	0.3
+Release:	0.4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -102,7 +102,8 @@ Requires:	skrooge
 Requires:	user-manager
 Requires:	xscreensaver
 Suggests:	yakuake
-Conflicts:	task-kde4
+Provides:	task-kde4 = 1:4.14.4
+Obsoletes:	task-kde4 <= 1:4.14.3
 BuildArch:	noarch
 %rename		task-plasma5 < 5.3-0.6
 
@@ -167,7 +168,8 @@ Requires:	systemsettings
 Requires:	solid
 Requires:	polkit-kde-agent-1
 Requires:	desktop-common-data
-Conflicts:	task-kde4-minimal
+Provides:	task-kde4-minimal = 1:4.14.4
+Obsoletes:	task-kde4-minimal <= 1:4.14.3
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
