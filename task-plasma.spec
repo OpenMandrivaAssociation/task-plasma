@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.4
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -12,6 +12,7 @@ Requires:	grub2-editor
 %endif
 Requires:	bluedevil5
 Requires:	kwayland
+Requires:	kwayland-integration
 # (tpg) needs to be updated to KF5
 Requires:	digikam
 Requires:	kopete
