@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.4
-Release:	0.2
+Release:	0.3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -88,7 +88,7 @@ Requires:	sddm
 Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
 # (tpg) very experimental systray for Plasma
-Requires:	simplesystray
+Suggests:	simplesystray
 Requires:	skanlite
 Requires:	systemd-kcm
 Requires:	discover
@@ -103,6 +103,20 @@ Requires:	skrooge
 Requires:	user-manager
 Requires:	xscreensaver
 Suggests:	yakuake
+# KTP
+Requires:	ktp-approver
+Requires:	ktp-send-file
+Requires:	ktp-text-ui
+Requires:	ktp-auth-handler
+Requires:	ktp-filetransfer-handler
+Requires:	ktp-call-ui
+Requires:	ktp-desktop-applets
+Requires:	ktp-kded-module
+Requires:	ktp-contact-runner
+Requires:	ktp-accounts-kcm
+Requires:	ktp-common-internals
+Requires:	ktp-contact-list
+
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
 BuildArch:	noarch
