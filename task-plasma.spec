@@ -13,6 +13,7 @@ Requires:	grub2-editor
 Requires:	bluedevil5
 Requires:	kwayland
 Requires:	kwayland-integration
+Requires:	k3b
 # (tpg) needs to be updated to KF5
 Requires:	digikam
 Requires:	kopete
@@ -79,6 +80,7 @@ Requires:	krfb
 Requires:	kwalletmanager
 Requires:	kwallet-pam
 Requires:	kuser
+Requires:	kwave
 # (tpg) needs to be ported to KF5
 Requires:	okular
 Requires:	sonnet-hunspell
@@ -116,6 +118,10 @@ Requires:	ktp-contact-runner
 Requires:	ktp-accounts-kcm
 Requires:	ktp-common-internals
 Requires:	ktp-contact-list
+Requires:	signon-kwallet-extension
+# Telepathy needed for KTP
+Requires:	telepathy-logger
+Requires:	telepathy-misson-control
 
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
