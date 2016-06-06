@@ -13,6 +13,7 @@ Requires:	grub2-editor
 Requires:	bluedevil5
 Requires:	kwayland
 Requires:	kwayland-integration
+Requires:	k3b
 # (tpg) needs to be updated to KF5
 Requires:	digikam
 Requires:	kopete
