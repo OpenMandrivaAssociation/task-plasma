@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.4
-Release:	0.3
+Release:	0.4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -121,7 +121,7 @@ Requires:	ktp-contact-list
 Requires:	signon-kwallet-extension
 # Telepathy needed for KTP
 Requires:	telepathy-logger
-Requires:	telepathy-misson-control
+Requires:	telepathy-mission-control
 
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
