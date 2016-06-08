@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.4
-Release:	0.4
+Release:	0.5
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -16,6 +16,7 @@ Requires:	kwayland-integration
 Requires:	k3b
 # (tpg) needs to be updated to KF5
 Requires:	digikam
+# (bero) needs to be updated to KF5 [or replaced with %{name}-telepathy once that works well]
 Requires:	kopete
 Requires:	kamoso
 Requires:	ktorrent
@@ -105,7 +106,23 @@ Requires:	skrooge
 Requires:	user-manager
 Requires:	xscreensaver
 Suggests:	yakuake
-# KTP
+
+Provides:	task-kde4 = 1:4.14.4
+Obsoletes:	task-kde4 <= 1:4.14.3
+BuildArch:	noarch
+%rename		task-plasma5 < 5.3-0.6
+
+%description
+This package is a meta-package, meaning that its purpose is to contain
+the complete dependencies for running the Plasma 5 desktop.
+
+%files
+
+#----------------------------------------------------------------------------
+
+%package telepathy
+Summary:	Packages needed to use Telepathy instant messenging in Plasma 5
+Group:		Graphical desktop/KDE
 Requires:	ktp-approver
 Requires:	ktp-send-file
 Requires:	ktp-text-ui
@@ -122,17 +139,15 @@ Requires:	signon-kwallet-extension
 # Telepathy needed for KTP
 Requires:	telepathy-logger
 Requires:	telepathy-mission-control
+Suggests:	telepathy-haze
+Suggests:	telepathy-gabble
 
-Provides:	task-kde4 = 1:4.14.4
-Obsoletes:	task-kde4 <= 1:4.14.3
-BuildArch:	noarch
-%rename		task-plasma5 < 5.3-0.6
-
-%description
+%description telepathy
 This package is a meta-package, meaning that its purpose is to contain
-the complete dependencies for running the Plasma 5 desktop.
+dependencies for running Telepathy instant messenging in a Plama 5
+desktop environment.
 
-%files
+%files telepathy
 
 #----------------------------------------------------------------------------
 
