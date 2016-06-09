@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.4
-Release:	0.5
+Release:	0.6
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -174,6 +174,7 @@ Requires:	libproxy-webkit
 # Plasma 5
 Requires:	breeze
 Requires:	breeze-icons
+Requires: oxygen-sounds
 Requires:	frameworkintegration
 Requires:	kde-cli-tools
 Requires:	kinit
