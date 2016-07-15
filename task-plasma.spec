@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.6.5
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -78,7 +78,6 @@ Requires:	spectacle
 Requires:	ksaneplugin
 Requires:	kipi-plugins
 Requires:	krfb
-Requires:	kwalletmanager
 Requires:	kwallet-pam
 Requires:	kuser
 Requires:	kwave
@@ -158,7 +157,6 @@ Group:		Graphical desktop/KDE
 Requires:	dbus-x11
 Requires:	oxygen-fonts
 Requires:	oxygen-icons
-Requires:	sni-qt
 Suggests:	task-pulseaudio
 Requires:	task-x11
 Requires:	xsettings-kde
@@ -174,7 +172,7 @@ Requires:	libproxy-webkit
 # Plasma 5
 Requires:	breeze
 Requires:	breeze-icons
-Requires: oxygen-sounds
+Requires:	oxygen-sounds
 Requires:	frameworkintegration
 Requires:	kde-cli-tools
 Requires:	kinit
@@ -199,6 +197,7 @@ Requires:	kscreenlocker
 Requires:	kservice
 Requires:	ksysguard
 Requires:	ksshaskpass
+Requires:	kwalletmanager
 Requires:	kwin-x11
 Requires:	kwrited
 Requires:	phonon4qt5-backend
