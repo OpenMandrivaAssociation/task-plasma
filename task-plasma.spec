@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.6.5
-Release:	0.2
+Version:	5.8.2
+Release:	0.1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -89,8 +89,6 @@ Requires:	myspell-dictionary
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
-# (tpg) very experimental systray for Plasma
-Suggests:	simplesystray
 Requires:	skanlite
 Requires:	systemd-kcm
 Requires:	discover
