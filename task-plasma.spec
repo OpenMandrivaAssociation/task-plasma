@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.8.3
+Version:	5.8.4
 Release:	0.1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -11,6 +11,7 @@ Requires:	openmandriva-kde-icons
 Requires:	grub2-editor
 %endif
 Requires:	bluedevil5
+Requires:	colord-kde
 Requires:	kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland
