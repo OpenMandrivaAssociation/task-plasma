@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.8.4
-Release:	0.1
+Release:	0.2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -188,7 +188,7 @@ Requires:	plasma-workspace >= %{version}
 Requires:	kdeplasma-addons
 Requires:	kde-gtk-config
 Requires:	khotkeys
-Requires:	kinfocenter5
+Requires:	kinfocenter >= 5.8.4
 Requires:	kio-extras
 Requires:	kmenuedit
 Requires:	konsole
@@ -202,7 +202,7 @@ Requires:	kwin-x11
 Requires:	kwrited
 Requires:	phonon4qt5-backend
 Requires:	plasma-nm
-Requires:	powerdevil >= 5.3.0
+Requires:	powerdevil >= 5.8.4
 Requires:	systemsettings
 Requires:	solid
 Requires:	polkit-kde-agent-1
