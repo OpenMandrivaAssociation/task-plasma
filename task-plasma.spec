@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.8.4
-Release:	0.6
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -14,7 +14,7 @@ Requires:	bluedevil5
 Requires:	colord-kde
 Requires:	kwayland
 Requires:	kwayland-integration
-Requires:	kwin-wayland
+Requires:	kwin-wayland >= %{version}
 Requires:	k3b
 # (tpg) needs to be updated to KF5
 Requires:	digikam
@@ -194,7 +194,7 @@ Requires:	kservice
 Requires:	ksysguard
 Requires:	ksshaskpass
 Requires:	kwalletmanager
-Requires:	kwin-x11
+Requires:	kwin-x11 >= %{version}
 Requires:	kwrited
 Requires:	phonon4qt5-backend
 Requires:	plasma-nm
