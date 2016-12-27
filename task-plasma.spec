@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.8.4
+Version:	5.8.5
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -91,7 +91,6 @@ Requires:	skanlite
 Requires:	systemd-kcm
 Requires:	discover
 Requires:	khelpcenter
-Requires:	plasma-mediacenter
 Requires:	partitionmanager
 # (tpg) we have our own wallpapers :)
 #Requires:	plasma-workspace-wallpapers
