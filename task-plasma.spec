@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.9.4
+Version:	5.9.5
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -37,6 +37,7 @@ Requires:	jovie
 Requires:	kdeconnect
 Requires:	kdegraphics-thumbnailers
 Requires:	kget
+Requires:	kio-gdrive
 # (tpg) kdepim
 Requires:	kdepim-runtime
 Requires:	akonadi-archivemail-agent
