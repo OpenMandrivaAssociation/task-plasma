@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.9.5
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -40,26 +40,17 @@ Requires:	kget
 Requires:	kio-gdrive
 # (tpg) kdepim
 Requires:	kdepim-runtime
-Requires:	akonadi-archivemail-agent
-Requires:	akonadi-followupreminder-agent
-Requires:	akonadi-mailfilter-agent
 Requires:	akonadi-notes-agent
-Requires:	akonadi-sendlater-agent
 Requires:	akonadi-search
+Requires:	akonadi-calendar-tools
 Requires:	kleopatra
-Requires:	akregator
-Requires:	importwizard
 Requires:	kaddressbook
-Requires:	kalarm
 Requires:	kmail
-Requires:	knotes
-Requires:	kontact
+Requires:	kmail-account-wizard
+Requires:	kontacts
 Requires:	korganizer
-Requires:	storageservicemanager
-Conflicts:	blogilo
+Requires:	blogilo
 Requires:	akregator
-Requires:	grantleeeditor
-Requires:	kdepim-accountwizard
 # end pim
 Requires:	kdepasswd
 Requires:	ksystemlog
@@ -80,7 +71,6 @@ Requires:	krfb
 Requires:	kwallet-pam
 Requires:	kuser
 Requires:	kwave
-# (tpg) needs to be ported to KF5
 Requires:	okular
 Requires:	sonnet-hunspell
 Requires:	speech-dispatcher
