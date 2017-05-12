@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.9.5
-Release:	4
+Release:	5
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -47,7 +47,7 @@ Requires:	kleopatra
 Requires:	kaddressbook
 Requires:	kmail
 Requires:	kmail-account-wizard
-Requires:	kontacts
+Requires:	kontact
 Requires:	korganizer
 Requires:	blogilo
 Requires:	akregator
