@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.9.5
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -195,6 +195,44 @@ Requires:	polkit-kde-agent-1
 Requires:	desktop-common-data
 Provides:	task-kde4-minimal = 1:4.14.4
 Obsoletes:	task-kde4-minimal <= 1:4.14.3
+
+# (tpg) obsolete old lang packages
+Provides:	kde-l10n = 3:17.04.0
+Obsoletes:	kde-l10n < 3:17.04.0
+Provides:	kde-l10n = 17.04.0
+Obsoletes:	kde-l10n < 17.04.0
+Provides:	kde-l10n-de = 3:17.04.0
+Obsoletes:	kde-l10n-de < 3:17.04.0
+Provides:	kde-l10n-en_GB = 3:17.04.0
+Obsoletes:	kde-l10n-en_GB < 3:17.04.0
+Provides:	kde-l10n-es = 3:17.04.0
+Obsoletes:	kde-l10n-es < 3:17.04.0
+Provides:	kde-l10n-fr = 3:17.04.0
+Obsoletes:	kde-l10n-fr < 3:17.04.0
+Provides:	kde-l10n-it = 3:17.04.0
+Obsoletes:	kde-l10n-it < 3:17.04.0
+Provides:	kde-l10n-ja = 3:17.04.0
+Obsoletes:	kde-l10n-ja < 3:17.04.0
+Provides:	kde-l10n-ko = 3:17.04.0
+Obsoletes:	kde-l10n-ko < 3:17.04.0
+Provides:	kde-l10n-nb = 3:17.04.0
+Obsoletes:	kde-l10n-nb < 3:17.04.0
+Provides:	kde-l10n-nl = 3:17.04.0
+Obsoletes:	kde-l10n-nl < 3:17.04.0
+Provides:	kde-l10n-nn = 3:17.04.0
+Obsoletes:	kde-l10n-nn < 3:17.04.0
+Provides:	kde-l10n-pl = 3:17.04.0
+Obsoletes:	kde-l10n-pl < 3:17.04.0
+Provides:	kde-l10n-pt_BR = 3:17.04.0
+Obsoletes:	kde-l10n-pt_BR < 3:17.04.0
+Provides:	kde-l10n-ro = 3:17.04.0
+Obsoletes:	kde-l10n-ro < 3:17.04.0
+Provides:	kde-l10n-ru = 3:17.04.0
+Obsoletes:	kde-l10n-ru < 3:17.04.0
+Provides:	kde-l10n-zh_CN = 3:17.04.0
+Obsoletes:	kde-l10n-zh_CN < 3:17.04.0
+Provides:	kde-l10n-zh_TW = 3:17.04.0
+Obsoletes:	kde-l10n-zh_TW < 3:17.04.0
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
