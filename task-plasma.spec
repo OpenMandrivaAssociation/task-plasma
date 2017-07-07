@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.9.5
-Release:	9
+Release:	10
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -95,7 +95,6 @@ Suggests:	yakuake
 
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
-BuildArch:	noarch
 %rename		task-plasma5 < 5.3-0.6
 
 %description
