@@ -89,8 +89,8 @@ Requires:	discover-notifier
 Requires:	print-manager
 Requires:	skrooge
 Requires:	user-manager
-Requires:	xscreensaver
 Requires:	ssr
+Suggests:	xscreensaver
 Suggests:	yakuake
 
 Provides:	task-kde4 = 1:4.14.4
