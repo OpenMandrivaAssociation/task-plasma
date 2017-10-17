@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.10.5
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -70,6 +70,7 @@ Requires:	ksaneplugin
 Requires:	kipi-plugins
 Requires:	krfb
 Requires:	kwallet-pam
+Requires:	signon-kwallet-extension
 Requires:	kwave
 Requires:	okular
 Requires:	sonnet-hunspell
