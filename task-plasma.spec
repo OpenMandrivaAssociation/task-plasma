@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.10.5
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -153,7 +153,6 @@ Requires:	gwenview
 Requires:	pinentry-qt5
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
-Requires:	libproxy-webkit
 
 # Plasma 5
 Requires:	breeze
