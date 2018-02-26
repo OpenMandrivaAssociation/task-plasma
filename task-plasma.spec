@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.10.5
-Release:	2
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -19,7 +19,7 @@ Requires:	k3b
 # (tpg) needs to be updated to KF5
 Requires:	digikam
 # (bero) needs to be updated to KF5 [or replaced with %{name}-telepathy once that works well]
-Requires:	kopete
+#Requires:	kopete
 Requires:	kamoso
 Requires:	ktorrent
 Requires:	krita
@@ -30,10 +30,7 @@ Requires:	kaccounts-integration
 Requires:	kaccounts-providers
 Requires:	kdenetwork-filesharing
 Requires:	kidentitymanagement
-Requires:	kremotecontrol
 Requires:	zeroconf-ioslave
-Requires:	kaccessible
-Requires:	jovie
 Requires:	kdeconnect
 Requires:	kdegraphics-thumbnailers
 Requires:	kget
@@ -50,13 +47,11 @@ Requires:	kmail-account-wizard
 Requires:	kontact
 Requires:	kalarm
 Requires:	korganizer
-Requires:	blogilo
 Requires:	akregator
 # end pim
 Requires:	kdialog
 Requires:	ksystemlog
 Requires:	krdc
-Requires:	kremotecontrol
 Requires:	kdenlive
 Requires:	kamera
 Requires:	kcalc
@@ -66,7 +61,6 @@ Requires:	kgamma5
 Requires:	kwrite
 Requires:	konversation
 Requires:	spectacle
-Requires:	ksaneplugin
 Requires:	kipi-plugins
 Requires:	krfb
 Requires:	kwallet-pam
@@ -153,7 +147,6 @@ Requires:	gwenview
 Requires:	pinentry-qt5
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
-Requires:	libproxy-webkit
 
 # Plasma 5
 Requires:	breeze
