@@ -90,7 +90,7 @@ Suggests:	yakuake
 
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
-%rename		task-plasma5 < 5.3-0.6
+%rename		task-plasma5
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
