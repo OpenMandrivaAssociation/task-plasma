@@ -68,6 +68,7 @@ Requires:	kwallet-pam
 Requires:	signon-kwallet-extension
 Requires:	kwave
 Requires:	okular
+Requires:	plymouth-kcm
 Requires:	sonnet-hunspell
 Requires:	speech-dispatcher
 Requires:	myspell-dictionary
