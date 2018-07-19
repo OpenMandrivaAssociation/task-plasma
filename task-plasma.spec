@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.12.6
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -12,6 +12,7 @@ Requires:	grub2-editor
 %endif
 Requires:	bluedevil5
 Requires:	colord-kde
+Requires:	elisa
 Requires:	kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland >= %{version}
@@ -90,7 +91,7 @@ Suggests:	yakuake
 
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
-%rename		task-plasma5 < 5.3-0.6
+%rename		task-plasma5
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -163,6 +164,7 @@ Requires:	plasma-pa
 Requires:	plasma-integration
 Requires:	plasma-desktop >= %{version}
 Requires:	plasma-framework
+Requires:	plasma-vault
 Requires:	plasma-workspace >= %{version}
 Requires:	kdeplasma-addons
 Requires:	kde-gtk-config
@@ -185,6 +187,7 @@ Requires:	powerdevil >= 5.8.4
 Requires:	systemsettings
 Requires:	solid
 Requires:	polkit-kde-agent-1
+Requires:	xdg-desktop-portal-kde
 Requires:	desktop-common-data
 Provides:	task-kde4-minimal = 1:4.14.4
 Obsoletes:	task-kde4-minimal <= 1:4.14.3
