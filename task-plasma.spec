@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.13.5
+Version:	5.14.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -13,6 +13,7 @@ Requires:	grub2-editor
 Requires:	bluedevil5
 Requires:	colord-kde
 Requires:	elisa
+Requires:	drkonqi
 Requires:	kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland >= %{version}
@@ -85,6 +86,8 @@ Requires:	partitionmanager
 # (tpg) we have our own wallpapers :)
 #Requires:	plasma-workspace-wallpapers
 Requires:	discover-notifier
+Requires:	discover-backend-packagekit
+Requires:	discover-backend-flatpak
 Requires:	print-manager
 Requires:	skrooge
 Requires:	user-manager
