@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.14.2
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -92,6 +92,8 @@ Requires:	print-manager
 Requires:	skrooge
 Requires:	user-manager
 Requires:	ssr
+Requires:	libproxy-kde
+Requires:	libproxy-networkmanager
 Suggests:	xscreensaver
 Suggests:	yakuake
 
