@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.12.6
+Version:	5.12.7
 Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
