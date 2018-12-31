@@ -11,10 +11,10 @@ Requires:	openmandriva-kde-icons
 Requires:	grub2-editor
 %endif
 Requires:	bluedevil5
-Requires:	colord-kde
 Requires:	elisa
 Requires:	drkonqi
-Requires:	kwayland
+# (crazy) FIXME: need -wayland task
+Requires:       kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland >= %{version}
 Requires:	k3b
@@ -37,6 +37,7 @@ Requires:	kdeconnect
 Requires:	kdegraphics-thumbnailers
 Requires:	kget
 Requires:	kio-gdrive
+# (crazy) FIXME: need -pim task
 # (tpg) kdepim
 Requires:	kdepim-runtime
 Requires:	akonadi-notes-agent
@@ -80,22 +81,24 @@ Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
 Requires:	skanlite
 Requires:	systemd-kcm
-Requires:	discover
 Requires:	khelpcenter
 Requires:	partitionmanager
-# (tpg) we have our own wallpapers :)
-#Requires:	plasma-workspace-wallpapers
+# (crazy) FIXME: that one should not be default , dnfdragona maybe ?
+#        but ofc pull it in from iso script
+Requires:       discover
 Requires:	discover-notifier
 Requires:	discover-backend-packagekit
 Requires:	discover-backend-flatpak
 Requires:	print-manager
-Requires:	skrooge
 Requires:	user-manager
 Requires:	ssr
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
+Requires:       kde-gtk-config
+
 Suggests:	xscreensaver
 Suggests:	yakuake
+Suggests:       skrooge
 
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
@@ -145,13 +148,12 @@ Summary:	Minimal dependencies needed for Plasma 5
 Group:		Graphical desktop/KDE
 # Basic
 Requires:	dbus-x11
-Requires:	oxygen-fonts
-Requires:	oxygen-icons
-Suggests:	task-pulseaudio
 Requires:	task-x11
 Requires:	xsettings-kde
 Requires:	ark
+Requires:       kate
 Requires:	dolphin
+Requires:       konsole
 Requires:	gwenview
 Requires:	pinentry-qt5
 Requires:	libproxy-kde
@@ -176,7 +178,6 @@ Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
 Requires:	kdeplasma-addons
-Requires:	kde-gtk-config
 Requires:	khotkeys
 Requires:	kinfocenter >= 5.8.4
 Requires:	kio-extras
@@ -197,7 +198,11 @@ Requires:	systemsettings
 Requires:	solid
 Requires:	polkit-kde-agent-1
 Requires:	xdg-desktop-portal-kde
+# (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
 Requires:	desktop-common-data
+
+Suggests:       task-pulseaudio
+
 Provides:	task-kde4-minimal = 1:4.14.4
 Obsoletes:	task-kde4-minimal <= 1:4.14.3
 
