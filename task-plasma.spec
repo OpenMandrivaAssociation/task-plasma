@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.14.3
-Release:	2
+Version:	5.14.4
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -18,6 +18,7 @@ Requires:       kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland >= %{version}
 Requires:	k3b
+Requires:	kbackup
 # (tpg) needs to be updated to KF5
 Requires:	digikam
 # (bero) needs to be updated to KF5 [or replaced with %{name}-telepathy once that works well]
