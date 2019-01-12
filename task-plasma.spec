@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.14.4
+Version:	5.14.5
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -17,12 +17,14 @@ Requires:	drkonqi
 Requires:       kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland >= %{version}
-Requires:	k3b
+# Part of KApps, but not useful to people with computers
+# that don't have optical drives -- let's not make it a
+# hard requirement
+Suggests:	k3b
 Requires:	kbackup
 # (tpg) needs to be updated to KF5
 Requires:	digikam
-# (bero) needs to be updated to KF5 [or replaced with %{name}-telepathy once that works well]
-#Requires:	kopete
+Requires:	kopete
 Requires:	kamoso
 Requires:	ktorrent
 Requires:	krita
@@ -84,12 +86,16 @@ Requires:	skanlite
 Requires:	systemd-kcm
 Requires:	khelpcenter
 Requires:	partitionmanager
-# (crazy) FIXME: that one should not be default , dnfdragona maybe ?
-#        but ofc pull it in from iso script
-Requires:       discover
-Requires:	discover-notifier
-Requires:	discover-backend-packagekit
-Requires:	discover-backend-flatpak
+# Part of plasma, but we prefer dnfdragora...
+# Let's not pull this in
+#Requires:      discover
+#Requires:	discover-notifier
+#Requires:	discover-backend-packagekit
+#Requires:	discover-backend-flatpak
+# Not strictly part of plasma, but we want
+# an alternative to discover now that we
+# don't include it anymore...
+Suggests:	dnfdragora
 Requires:	print-manager
 Requires:	user-manager
 Requires:	ssr
@@ -221,4 +227,3 @@ minimal dependencies for running a minimal Plama 5 desktop environment.
 %build
 
 %install
-
