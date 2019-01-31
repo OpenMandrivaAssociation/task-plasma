@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.14.5
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -11,7 +11,6 @@ Requires:	openmandriva-kde-icons
 Requires:	grub2-editor
 %endif
 Requires:	bluedevil5
-Requires:	elisa
 Requires:	drkonqi
 # (crazy) FIXME: need -wayland task
 Requires:       kwayland
@@ -96,8 +95,9 @@ Requires:	partitionmanager
 # an alternative to discover now that we
 # don't include it anymore...
 Suggests:	dnfdragora
+Suggests:	plasma-pk-updates
 Requires:	print-manager
-Requires:	user-manager
+Requires:	kuser
 Requires:	ssr
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
