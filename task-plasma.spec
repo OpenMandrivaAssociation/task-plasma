@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.14.5
-Release:	2
+Version:	5.15.4
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -13,7 +13,7 @@ Requires:	grub2-editor
 Requires:	bluedevil5
 Requires:	drkonqi
 # (crazy) FIXME: need -wayland task
-Requires:       kwayland
+Requires:	kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland >= %{version}
 # Part of KApps, but not useful to people with computers
@@ -99,14 +99,10 @@ Suggests:	plasma-pk-updates
 Requires:	print-manager
 Requires:	kuser
 Requires:	ssr
-Requires:	libproxy-kde
-Requires:	libproxy-networkmanager
-Requires:       kde-gtk-config
-
+Requires:	kde-gtk-config
 Suggests:	xscreensaver
 Suggests:	yakuake
 Suggests:       skrooge
-
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
 %rename		task-plasma5
@@ -158,14 +154,13 @@ Requires:	dbus-x11
 Requires:	task-x11
 Requires:	xsettings-kde
 Requires:	ark
-Requires:       kate
+Requires:	kate
 Requires:	dolphin
-Requires:       konsole
+Requires:	konsole
 Requires:	gwenview
 Requires:	pinentry-qt5
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
-
 # Plasma 5
 Requires:	breeze
 Requires:	breeze-icons
@@ -207,8 +202,7 @@ Requires:	polkit-kde-agent-1
 Requires:	xdg-desktop-portal-kde
 # (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
 Requires:	desktop-common-data
-
-Suggests:       task-pulseaudio
+Suggests:	task-pulseaudio
 
 Provides:	task-kde4-minimal = 1:4.14.4
 Obsoletes:	task-kde4-minimal <= 1:4.14.3
