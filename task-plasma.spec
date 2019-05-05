@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.15.4
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -98,7 +98,7 @@ Suggests:	discover-notifier
 # an alternative to discover now that we
 # don't include it anymore...
 Suggests:	dnfdragora
-Suggests:	plasma-pk-updates
+#Suggests:	plasma-pk-updates
 Requires:	print-manager
 Requires:	kuser
 Requires:	ssr
