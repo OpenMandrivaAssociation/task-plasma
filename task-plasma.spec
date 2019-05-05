@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.15.4
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -86,11 +86,11 @@ Requires:	systemd-kcm
 Requires:	khelpcenter
 Requires:	partitionmanager
 # Part of plasma, but we prefer dnfdragora...
-# Let's not pull this in
-#Requires:      discover
-#Requires:	discover-notifier
+# Discover is needed for Plasma plugins, FWupd
+Requires:	discover
+Requires:	discover-notifier
 #Requires:	discover-backend-packagekit
-#Requires:	discover-backend-flatpak
+Requires:	discover-backend-flatpak
 # Not strictly part of plasma, but we want
 # an alternative to discover now that we
 # don't include it anymore...
