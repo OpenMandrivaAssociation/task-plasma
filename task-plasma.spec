@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.15.4
-Release:	4
+Version:	5.15.5
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -21,6 +21,9 @@ Requires:	kwin-wayland >= %{version}
 # hard requirement
 Suggests:	k3b
 Requires:	kbackup
+# (tpg) Falkon is our default web browser
+Requires:	falkon-kde
+Requires:	falkon-plugins
 # (tpg) needs to be updated to KF5
 Requires:	digikam
 Requires:	kopete
@@ -85,27 +88,28 @@ Requires:	skanlite
 Requires:	systemd-kcm
 Requires:	khelpcenter
 Requires:	partitionmanager
+# (tpg) discover does not break dnf and dnfdragora
+# as packagekit plugin is not installed by default
+Requires:	discover
+Requires:	discover-notifier
 # Part of plasma, but we prefer dnfdragora...
 # Discover is needed for Plasma plugins, FWupd
 # But it likes breaking dnf, so for now
 # it shouldn't be on a default install.
 # Maybe limit it to do fwupd only?
-Suggests:	discover
-Suggests:	discover-notifier
 #Suggests:	discover-backend-packagekit
 #Suggests:	discover-backend-flatpak
 # Not strictly part of plasma, but we want
 # an alternative to discover now that we
 # don't include it anymore...
 Suggests:	dnfdragora
-#Suggests:	plasma-pk-updates
 Requires:	print-manager
 Requires:	kuser
 Requires:	ssr
 Requires:	kde-gtk-config
 Suggests:	xscreensaver
 Suggests:	yakuake
-Suggests:       skrooge
+Suggests:	skrooge
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
 %rename		task-plasma5
