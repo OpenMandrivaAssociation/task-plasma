@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.15.5
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -207,7 +207,7 @@ Requires:	powerdevil >= 5.8.4
 Requires:	systemsettings
 Requires:	solid
 Requires:	polkit-kde-agent-1
-Requires:	user-manager
+Requires:	om-user-manager
 Requires:	xdg-desktop-portal-kde
 # (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
 Requires:	desktop-common-data
