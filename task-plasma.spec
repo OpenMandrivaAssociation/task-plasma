@@ -99,6 +99,8 @@ Suggests:	yakuake
 Suggests:	skrooge
 Recommends:	om-repo-picker
 Recommends:	om-feeling-like
+Recommends:	om-update-config
+Recommends:	om-user-manager
 Provides:	task-kde4 = 1:4.14.4
 Obsoletes:	task-kde4 <= 1:4.14.3
 %rename		task-plasma5
