@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.17.5
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -88,6 +88,7 @@ Requires:	systemd-kcm
 Requires:	khelpcenter
 Requires:	partitionmanager
 Requires:	discover
+Requires:	discover-notifier
 Requires:	discover-backend-packagekit
 Requires:	print-manager
 Requires:	kuser
