@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.18.1
+Version:	5.18.90
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -150,7 +150,7 @@ Summary:	Minimal dependencies needed for Plasma 5
 Group:		Graphical desktop/KDE
 # Basic
 Requires:	task-x11
-Requires:	xsettings-kde
+Requires:	xsettingsd
 Requires:	ark
 Requires:	kate
 Requires:	dolphin
