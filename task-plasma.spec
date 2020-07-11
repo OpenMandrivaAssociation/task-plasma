@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.19.3
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -216,15 +216,13 @@ minimal dependencies for running a minimal Plama 5 desktop environment.
 
 #----------------------------------------------------------------------------
 
-%package mobile
-Summary:	Packages for Plasma Mobile
+%package mobile-minimal
+Summary:	Minimal set of packages for Plasma Mobile
 Group:		Graphical desktop/KDE
 # Basic
 Requires:	task-x11
 Requires:	xsettingsd
 Conflicts:	xsettings-kde
-Requires:	ark
-Requires:	kate
 Requires:	konsole
 Requires:	pinentry-qt5
 Requires:	libproxy-kde
@@ -245,18 +243,12 @@ Requires:	plasma-framework
 Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
-Requires:	khotkeys
-Requires:	kinfocenter >= 5.8.4
-Requires:	kio-extras
 Requires:	konsole
-Requires:	kscreen5
 Requires:	kscreenlocker
 Requires:	kservice
-Requires:	ksysguard
 Requires:	ksshaskpass
 Requires:	kwalletmanager
 Requires:	kwin-x11 >= %{version}
-Requires:	kwrited
 Requires:	phonon4qt5-backend
 Requires:	plasma-nm
 Requires:	powerdevil >= 5.8.4
@@ -281,6 +273,22 @@ Requires:	index-fm
 # (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
 Requires:	desktop-common-data
 Suggests:	task-pulseaudio
+
+%description mobile-minimal
+This package is a meta-package, meaning that its purpose is to contain
+a minimal version of the mobile version of the Plama 5 desktop environment.
+
+
+%files mobile-minimal
+#----------------------------------------------------------------------------
+
+%package mobile
+Summary:	Packages for Plasma Mobile
+Group:		Graphical desktop/KDE
+# Basic
+Requires:	%{name}-mobile-minimal = %{EVRD}
+Requires:	alligator
+Requires:	spacebar
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
