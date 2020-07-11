@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.19.1
+Version:	5.19.3
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -214,6 +214,80 @@ minimal dependencies for running a minimal Plama 5 desktop environment.
 
 %files minimal
 
+#----------------------------------------------------------------------------
+
+%package mobile
+Summary:	Packages for Plasma Mobile
+Group:		Graphical desktop/KDE
+# Basic
+Requires:	task-x11
+Requires:	xsettingsd
+Conflicts:	xsettings-kde
+Requires:	ark
+Requires:	kate
+Requires:	konsole
+Requires:	pinentry-qt5
+Requires:	libproxy-kde
+Requires:	libproxy-networkmanager
+# Plasma 5
+Requires:	breeze
+Requires:	breeze-icons
+Requires:	oxygen-sounds
+Requires:	frameworkintegration
+Requires:	kde-cli-tools
+Requires:	kinit
+Requires:	kded
+Requires:	kdeclarative
+Requires:	plasma-pa
+Requires:	plasma-integration
+Requires:	plasma-desktop >= %{version}
+Requires:	plasma-framework
+Requires:	plasma-vault
+Requires:	plasma-browser-integration
+Requires:	plasma-workspace >= %{version}
+Requires:	khotkeys
+Requires:	kinfocenter >= 5.8.4
+Requires:	kio-extras
+Requires:	konsole
+Requires:	kscreen5
+Requires:	kscreenlocker
+Requires:	kservice
+Requires:	ksysguard
+Requires:	ksshaskpass
+Requires:	kwalletmanager
+Requires:	kwin-x11 >= %{version}
+Requires:	kwrited
+Requires:	phonon4qt5-backend
+Requires:	plasma-nm
+Requires:	powerdevil >= 5.8.4
+Requires:	solid
+Requires:	polkit-kde-agent-1
+Requires:	xdg-desktop-portal-kde
+
+# Plasma Mobile specific bits
+Requires:	kaidan
+Requires:	calindori
+Requires:	keysmith
+Requires:	kweather
+Requires:	kclock
+Requires:	angelfish
+Requires:	plasma-settings
+Requires:	maui-pix
+Requires:	plasma-dialer
+Requires:	plasma-phonebook
+Requires:	plasma-camera
+Requires:	index-fm
+
+# (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
+Requires:	desktop-common-data
+Suggests:	task-pulseaudio
+
+%description mobile
+This package is a meta-package, meaning that its purpose is to contain
+the mobile version of the Plama 5 desktop environment.
+
+
+%files mobile
 #----------------------------------------------------------------------------
 
 %prep
