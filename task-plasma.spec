@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.19.3
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -243,6 +243,7 @@ Requires:	plasma-framework
 Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
+Requires:	plasma-mobile
 Requires:	konsole
 Requires:	kscreenlocker
 Requires:	kservice
