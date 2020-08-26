@@ -313,6 +313,9 @@ Requires:	okular-kimgio
 Requires:	okular-ooo
 Requires:	discover
 Requires:	discover-backend-packagekit
+Requires:	kscreen
+Requires:	kmix
+Requires:	plasma-pa
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
