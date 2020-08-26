@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.19.3
-Release:	3
+Version:	5.19.4
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -220,9 +220,6 @@ minimal dependencies for running a minimal Plama 5 desktop environment.
 Summary:	Minimal set of packages for Plasma Mobile
 Group:		Graphical desktop/KDE
 # Basic
-Requires:	task-x11
-Requires:	xsettingsd
-Conflicts:	xsettings-kde
 Requires:	konsole
 Requires:	pinentry-qt5
 Requires:	libproxy-kde
@@ -243,33 +240,40 @@ Requires:	plasma-framework
 Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
-Requires:	plasma-mobile
-Requires:	konsole
 Requires:	kscreenlocker
 Requires:	kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
-Requires:	kwin-x11 >= %{version}
 Requires:	phonon4qt5-backend
 Requires:	plasma-nm
 Requires:	powerdevil >= 5.8.4
 Requires:	solid
 Requires:	polkit-kde-agent-1
 Requires:	xdg-desktop-portal-kde
+Requires:	milou
+Requires:	kconfig
 
-# Plasma Mobile specific bits
-Requires:	kaidan
-Requires:	calindori
-Requires:	keysmith
+# FIXME at some point, we probably want to support plasma-mobile on X11
+# as well...
+Requires:	kwin-wayland >= %{version}
+Requires:	qt5-qtwayland
+
+# Key Plasma Mobile specific bits (stuff that is either
+# required or active in the default config)
+Requires:	plasma-phone-components
+Requires:	maliit
+Requires:	maliit-keyboard
 Requires:	kweather
 Requires:	kclock
 Requires:	angelfish
 Requires:	plasma-settings
-Requires:	maui-pix
 Requires:	plasma-dialer
-Requires:	plasma-phonebook
-Requires:	plasma-camera
-Requires:	index-fm
+Requires:	ofono
+
+# FIXME This is because plasma-mobile uses dbus-run-session to launch its
+# wayland session. dbus-run-session doesn't work with dbus-broker
+Requires:	dbus-daemon
+Conflicts:	dbus-broker
 
 # (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
 Requires:	desktop-common-data
@@ -290,10 +294,29 @@ Group:		Graphical desktop/KDE
 Requires:	%{name}-mobile-minimal = %{EVRD}
 Requires:	alligator
 Requires:	spacebar
+Requires:	maui-pix
+Requires:	kaidan
+Requires:	calindori
+Requires:	keysmith
+Requires:	kalk
+Requires:	plasma-phonebook
+Requires:	plasma-camera
+Requires:	index-fm
+Requires:	telegram-desktop
+Requires:	qmlkonsole
+Requires:	buho
+Requires:	okular-mobile
+Requires:	okular-pdf
+Requires:	okular-postscript
+Requires:	okular-epub
+Requires:	okular-kimgio
+Requires:	okular-ooo
+Requires:	discover
+Requires:	discover-backend-packagekit
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
-the mobile version of the Plama 5 desktop environment.
+the mobile version of the Plasma 5 desktop environment.
 
 
 %files mobile
