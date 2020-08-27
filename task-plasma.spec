@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.19.4
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -16,6 +16,7 @@ Requires:	drkonqi
 Requires:	kwayland
 Requires:	kwayland-integration
 Requires:	kwin-wayland >= %{version}
+Requires:	plasma-workspace-wayland >= %{version}
 # Part of KApps, but not useful to people with computers
 # that don't have optical drives -- let's not make it a
 # hard requirement
