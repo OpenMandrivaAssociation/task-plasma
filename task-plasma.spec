@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.19.4
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -271,12 +271,6 @@ Requires:	angelfish
 Requires:	plasma-settings
 Requires:	plasma-dialer
 Requires:	ofono
-
-# FIXME This is because plasma-mobile uses dbus-run-session to launch its
-# wayland session. dbus-run-session doesn't work with dbus-broker
-Requires:	dbus-daemon
-Conflicts:	dbus-broker
-
 # (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
 Requires:	desktop-common-data
 Suggests:	task-pulseaudio
@@ -318,6 +312,8 @@ Requires:	discover-backend-packagekit
 Requires:	kscreen
 Requires:	kmix
 Requires:	plasma-pa
+Requires:	vvave
+Requires:	koko
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
