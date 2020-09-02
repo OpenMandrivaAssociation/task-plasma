@@ -185,7 +185,6 @@ Requires:	khotkeys
 Requires:	kinfocenter >= 5.8.4
 Requires:	kio-extras
 Requires:	kmenuedit
-Requires:	konsole
 Requires:	kscreen5
 Requires:	kscreenlocker
 Requires:	kservice
@@ -222,7 +221,6 @@ minimal dependencies for running a minimal Plama 5 desktop environment.
 Summary:	Minimal set of packages for Plasma Mobile
 Group:		Graphical desktop/KDE
 # Basic
-Requires:	konsole
 Requires:	pinentry-qt5
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
@@ -247,6 +245,7 @@ Requires:	kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
 Requires:	phonon4qt5-backend
+Requires:	qmlkonsole
 Requires:	plasma-nm
 Requires:	powerdevil >= 5.8.4
 Requires:	solid
@@ -263,8 +262,7 @@ Requires:	qt5-qtwayland
 # Key Plasma Mobile specific bits (stuff that is either
 # required or active in the default config)
 Requires:	plasma-phone-components
-Requires:	maliit
-Requires:	maliit-keyboard
+Requires:	qt5-qtvirtualkeyboard
 Requires:	kweather
 Requires:	kclock
 Requires:	angelfish
