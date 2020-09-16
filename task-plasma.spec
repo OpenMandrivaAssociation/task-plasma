@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.19.4
-Release:	5
+Version:	5.19.5
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -267,8 +267,6 @@ Requires:	kweather
 Requires:	kclock
 Requires:	angelfish
 Requires:	plasma-settings
-Requires:	plasma-dialer
-Requires:	ofono
 # (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
 Requires:	desktop-common-data
 Suggests:	task-pulseaudio
