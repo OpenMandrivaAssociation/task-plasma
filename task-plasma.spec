@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.19.5
+Version:	5.20.3
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -302,7 +302,6 @@ Requires:	okular-pdf
 Requires:	okular-postscript
 Requires:	okular-epub
 Requires:	okular-kimgio
-Requires:	okular-ooo
 Requires:	discover
 Requires:	discover-backend-packagekit
 Requires:	kscreen
@@ -314,6 +313,7 @@ Requires:	nota
 Requires:	station
 Requires:	contacts
 Requires:	kube
+Requires:	itinerary
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
