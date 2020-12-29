@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.20.3
+Version:	5.20.4
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -240,7 +240,12 @@ Requires:	plasma-framework
 Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
-Requires:	kscreenlocker
+# FIXME This should really be "Requires:", but as of
+# 5.20.4, kscreenlocker on Plasma Mobile fails to unlock
+# even if the password is supplied correctly.
+# In the mean time, Plasma Mobile without lock screen is
+# usable, so let's not block further testing on this...
+Conflicts:	kscreenlocker
 Requires:	kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
