@@ -297,7 +297,10 @@ Requires:	calindori
 Requires:	keysmith
 Requires:	kalk
 Requires:	plasma-phonebook
-Requires:	plasma-camera
+#Requires:	plasma-camera
+# plasma-camera is better, but doesn't work (yet) on
+# PinePhone, so let's use the om-camera workaround for now
+Requires:	om-camera
 Requires:	index-fm
 Requires:	telegram-desktop
 Requires:	qmlkonsole
