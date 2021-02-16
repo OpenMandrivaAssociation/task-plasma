@@ -246,7 +246,7 @@ Requires:	plasma-workspace >= %{version}
 # even if the password is supplied correctly.
 # In the mean time, Plasma Mobile without lock screen is
 # usable, so let's not block further testing on this...
-Conflicts:	kscreenlocker
+#Conflicts:	kscreenlocker
 Requires:	kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
