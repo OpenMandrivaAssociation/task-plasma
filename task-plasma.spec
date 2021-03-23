@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.21.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -320,9 +320,10 @@ Requires:	vvave
 Requires:	koko
 Requires:	nota
 Requires:	station
-Requires:	contacts
+Requires:	communicator
 Requires:	kube
 Requires:	itinerary
+Requires: clip
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
