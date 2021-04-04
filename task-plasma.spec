@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.21.0
-Release:	2
+Version:	5.21.3
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -300,8 +300,8 @@ Requires:	kalk
 Requires:	plasma-phonebook
 #Requires:	plasma-camera
 # plasma-camera is better, but doesn't work (yet) on
-# PinePhone, so let's use the om-camera workaround for now
-Requires:	om-camera
+# PinePhone, so let's use a workaround for now
+Suggests:	megapixels
 Requires:	index-fm
 Requires:	telegram-desktop
 Requires:	qmlkonsole
@@ -323,7 +323,7 @@ Requires:	station
 Requires:	communicator
 Requires:	kube
 Requires:	itinerary
-Requires: clip
+Requires:	clip
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
