@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
 Version:	5.22.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
@@ -97,6 +97,7 @@ Requires:	ssr
 Requires:	kde-gtk-config
 Requires:	plasma-firewall
 Requires:	plasma-systemmonitor
+Requires:	plasma-disks
 Suggests:	xscreensaver
 Suggests:	yakuake
 Suggests:	skrooge
@@ -189,7 +190,6 @@ Requires:	kmenuedit
 Requires:	kscreen5
 Requires:	kscreenlocker
 Requires:	kservice
-Requires:	ksysguard
 Requires:	ksshaskpass
 Requires:	kwalletmanager
 Requires:	kwin-x11 >= %{version}
@@ -202,17 +202,14 @@ Requires:	solid
 Requires:	polkit-kde-agent-1
 Requires:	om-user-manager
 Requires:	xdg-desktop-portal-kde
-# (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
-Requires:	desktop-common-data
+Requires:	distro-release-desktop
 Suggests:	task-pulseaudio
-
 Provides:	task-kde4-minimal = 1:4.14.4
 Obsoletes:	task-kde4-minimal <= 1:4.14.3
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
 minimal dependencies for running a minimal Plama 5 desktop environment.
-
 
 %files minimal
 
@@ -273,8 +270,7 @@ Requires:	kweather
 Requires:	kclock
 Requires:	angelfish
 Requires:	plasma-settings
-# (crazy) FIXME: that desktop-common* package need fixing , all icons in there are broken
-Requires:	desktop-common-data
+Requires:	distro-release-desktop
 Suggests:	task-pulseaudio
 
 %description mobile-minimal
@@ -328,7 +324,6 @@ Requires:	clip
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
 the mobile version of the Plasma 5 desktop environment.
-
 
 %files mobile
 #----------------------------------------------------------------------------
