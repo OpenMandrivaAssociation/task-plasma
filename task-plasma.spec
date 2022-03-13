@@ -152,7 +152,14 @@ desktop environment.
 Summary:	Minimal dependencies needed for Plasma 5
 Group:		Graphical desktop/KDE
 # Basic
+%if %omvver >= 4050000
+Requires:	kwin-wayland >= %{version}
+Requires:	plasma-workspace-wayland >= %{version}
+%else
 Requires:	task-x11
+Requires:	kwin-x11 >= %{version}
+Requires:	plasma-workspace-x11 >= %{version}
+%endif
 Requires:	xsettingsd
 Conflicts:	xsettings-kde
 Requires:	ark
@@ -181,7 +188,6 @@ Requires:	plasma-framework
 Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
-Requires:	plasma-workspace-x11 >= %{version}
 Requires:	kdeplasma-addons
 Requires:	khotkeys
 Requires:	kinfocenter >= 5.8.4
@@ -192,7 +198,7 @@ Requires:	kscreenlocker
 Requires:	kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
-Requires:	kwin-x11 >= %{version}
+
 Requires:	kwrited
 Requires:	phonon4qt5-backend
 Requires:	plasma-nm
