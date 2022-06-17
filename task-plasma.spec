@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.24.2
+Version:	5.25.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -152,7 +152,7 @@ desktop environment.
 Summary:	Minimal dependencies needed for Plasma 5
 Group:		Graphical desktop/KDE
 # Basic
-%if %omvver >= 4050000
+%if %omvver > 4050000
 Requires:	kwin-wayland >= %{version}
 Requires:	plasma-workspace-wayland >= %{version}
 %else
@@ -270,7 +270,7 @@ Requires:	qt5-qtwayland
 
 # Key Plasma Mobile specific bits (stuff that is either
 # required or active in the default config)
-Requires:	plasma-phone-components
+Requires:	plasma-mobile
 Requires:	qt5-qtvirtualkeyboard
 Requires:	kweather
 Requires:	kclock
