@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.25.0
+Version:	5.25.2
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -181,7 +181,11 @@ Requires:	kded
 Requires:	kdeclarative
 Requires:	milou
 Requires:	baloo5
-Requires:	plasma-pa
+%ifnarch %{armx}
+Requires:	plasma-nm
+%else
+Requires:	cmst
+%endif
 Requires:	plasma-integration
 Requires:	plasma-desktop >= %{version}
 Requires:	plasma-framework
@@ -198,10 +202,9 @@ Requires:	kscreenlocker
 Requires:	kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
-
 Requires:	kwrited
 Requires:	phonon4qt5-backend
-Requires:	plasma-nm
+Requires:	plasma-pa
 Requires:	powerdevil >= 5.8.4
 Requires:	systemsettings
 Requires:	solid
