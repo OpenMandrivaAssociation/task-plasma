@@ -181,11 +181,7 @@ Requires:	kded
 Requires:	kdeclarative
 Requires:	milou
 Requires:	baloo5
-%ifnarch %{armx}
-Requires:	plasma-nm
-%else
-Requires:	cmst
-%endif
+Requires:	plasma-pa
 Requires:	plasma-integration
 Requires:	plasma-desktop >= %{version}
 Requires:	plasma-framework
@@ -204,7 +200,7 @@ Requires:	ksshaskpass
 Requires:	kwalletmanager
 Requires:	kwrited
 Requires:	phonon4qt5-backend
-Requires:	plasma-pa
+Requires:	plasma-nm
 Requires:	powerdevil >= 5.8.4
 Requires:	systemsettings
 Requires:	solid
