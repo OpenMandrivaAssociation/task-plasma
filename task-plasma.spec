@@ -1,6 +1,6 @@
 Summary:	Metapackage for Plasma 5
 Name:		task-plasma
-Version:	5.25.2
+Version:	5.27.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -98,6 +98,7 @@ Requires:	kde-gtk-config
 Requires:	plasma-firewall
 Requires:	plasma-systemmonitor
 Requires:	plasma-disks
+Requires:	plasma-welcome
 Suggests:	xscreensaver
 Suggests:	yakuake
 Suggests:	skrooge
