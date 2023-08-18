@@ -321,7 +321,7 @@ Requires:	koko
 Requires:	nota
 Requires:	station
 Requires:	communicator
-Requires:	kube
+#Requires:	kube
 Requires:	itinerary
 Requires:	clip
 
