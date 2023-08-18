@@ -6,7 +6,6 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma-minimal >= %{version}
 Requires:	distro-plasma-config
-Requires:	openmandriva-kde-icons
 %ifnarch %{armx}
 Requires:	grub2-editor
 %endif
@@ -89,17 +88,16 @@ Requires:	systemd-kcm
 Requires:	khelpcenter
 Requires:	partitionmanager
 Requires:	discover
-Requires:	discover-notifier
+#Requires:	discover-notifier
 Requires:	discover-backend-packagekit
 Requires:	print-manager
 Requires:	kuser
 Requires:	ssr
 Requires:	kde-gtk-config
-Requires:	plasma-firewall
+#Requires:	plasma-firewall
 Requires:	plasma-systemmonitor
 Requires:	plasma-disks
 Requires:	plasma-welcome
-Suggests:	xscreensaver
 Suggests:	yakuake
 Suggests:	skrooge
 Recommends:	om-repo-picker
