@@ -124,7 +124,7 @@ X11 window system support for Plasma 6
 %package wayland
 Summary:        Wayland window system support for Plasma 6
 Group:          Graphical desktop/KDE
-Requires:       kwin-wayland
+Requires:       kwin
 Requires:       plasma-workspace-wayland
 Requires:       kf6-kwindowsystem-backend-wayland
 
