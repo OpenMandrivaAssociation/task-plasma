@@ -248,7 +248,6 @@ Requires:	%mklibname Qt6VirtualKeyboard
 Requires:	kweather
 Requires:	kclock
 Requires:	angelfish
-Requires:	plasma-settings
 Requires:	distro-release-desktop
 Suggests:	task-pulseaudio
 
