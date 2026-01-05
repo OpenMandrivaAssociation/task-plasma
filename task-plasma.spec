@@ -1,34 +1,24 @@
-Summary:	Metapackage for Plasma 5
+Summary:	Metapackage for the Plasma Desktop
 Name:		task-plasma
-Version:	6.2.4
+Version:	6.5.4
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Requires:	task-plasma-minimal >= %{version}
+Requires:	%{name}-minimal = %{EVRD}
 Requires:	distro-plasma-config
-%ifnarch %{armx}
-Requires:	grub2-editor
-%endif
-Requires:	bluedevil5
+Requires:	bluedevil
 Requires:	drkonqi
-# (crazy) FIXME: need -wayland task
-Requires:	kwayland
-Requires:	kwayland-integration
-Requires:	kwin-wayland >= %{version}
-Requires:	plasma-workspace-wayland >= %{version}
 # Part of KApps, but not useful to people with computers
 # that don't have optical drives -- let's not make it a
 # hard requirement
 Suggests:	k3b
 Requires:	kbackup
-# (tpg) Falkon is our default web browser
-Requires:	falkon-kde
-Requires:	falkon-plugins
+Suggests:	helium-qt6
 Requires:	digikam
-Requires:	kopete
 Requires:	kamoso
 Requires:	ktorrent
-Requires:	krita
+# Holding off until we can get rid of qt5 support in Krita entirely
+#Suggests:	krita
 Requires:	dolphin-plugins
 Requires:	audiocd-kio
 Requires:	ffmpegthumbs
@@ -36,15 +26,16 @@ Requires:	kaccounts-integration
 Requires:	kaccounts-providers
 Requires:	kdenetwork-filesharing
 Requires:	kidentitymanagement
-Requires:	zeroconf-ioslave
+Requires:	kio-zeroconf
 Requires:	kdeconnect
 Requires:	kdegraphics-thumbnailers
 Requires:	kget
-Requires:	kio-gdrive
+# Let's not put in a hard requirement on support for a specific
+# cloud provider with a non-free server side...
+Suggests:	kio-gdrive
 # (crazy) FIXME: need -pim task
 # (tpg) kdepim
 Requires:	kdepim-runtime
-Requires:	akonadi-notes-agent
 Requires:	akonadi-search
 Requires:	akonadi-calendar-tools
 Requires:	kleopatra
@@ -57,18 +48,18 @@ Requires:	korganizer
 Requires:	akregator
 # end pim
 Requires:	kdialog
-Requires:	ksystemlog
+# Not very useful to journald users, so only suggesting it
+Suggests:	ksystemlog
 Requires:	krdc
 Requires:	kdenlive
 Requires:	kamera
 Requires:	kcalc
 Requires:	kate
 Requires:	kdf
-Requires:	kgamma5
+Requires:	kgamma
 Requires:	kwrite
 Requires:	konversation
 Requires:	spectacle
-Requires:	kipi-plugins
 Requires:	krfb
 Requires:	kwallet-pam
 Requires:	signon-kwallet-extension
@@ -77,23 +68,21 @@ Requires:	okular
 %ifnarch %{armx}
 Requires:	plymouth-kcm
 %endif
-Requires:	sonnet-hunspell
+Requires:	kf6-sonnet
 Requires:	speech-dispatcher
 Requires:	myspell-dictionary
 Requires:	sddm
 Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
 Requires:	skanlite
-Requires:	systemd-kcm
 Requires:	khelpcenter
 Requires:	partitionmanager
 Requires:	discover
 #Requires:	discover-notifier
 Requires:	discover-backend-packagekit
 Requires:	print-manager
-Requires:	kuser
 Requires:	ssr
-Requires:	kde-gtk-config
+Requires:	(kde-gtk-config if gtk+-3.0)
 #Requires:	plasma-firewall
 Requires:	plasma-systemmonitor
 Requires:	plasma-disks
@@ -101,12 +90,13 @@ Requires:	plasma-welcome
 Suggests:	yakuake
 Suggests:	skrooge
 Recommends:	om-repo-picker
-Recommends:	om-feeling-like
 Recommends:	om-update-config
-Recommends:	om-user-manager
-Provides:	task-kde4 = 1:4.14.4
-Obsoletes:	task-kde4 <= 1:4.14.3
-%rename		task-plasma5
+# Needs porting
+#Recommends:	om-feeling-like
+#Recommends:	om-user-manager
+Obsoletes:	task-kde4 <= 1:4.14.4
+%rename		task-plasma6
+Obsoletes:	%{name}-telepathy
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -116,34 +106,32 @@ the complete dependencies for running the Plasma 5 desktop.
 
 #----------------------------------------------------------------------------
 
-%package telepathy
-Summary:	Packages needed to use Telepathy instant messenging in Plasma 5
-Group:		Graphical desktop/KDE
-Requires:	ktp-approver
-Requires:	ktp-send-file
-Requires:	ktp-text-ui
-Requires:	ktp-auth-handler
-Requires:	ktp-filetransfer-handler
-Requires:	ktp-call-ui
-Requires:	ktp-desktop-applets
-Requires:	ktp-kded-module
-Requires:	ktp-contact-runner
-Requires:	ktp-accounts-kcm
-Requires:	ktp-common-internals
-Requires:	ktp-contact-list
-Requires:	signon-kwallet-extension
-# Telepathy needed for KTP
-Requires:	telepathy-logger
-Requires:	telepathy-mission-control
-Suggests:	telepathy-haze
-Suggests:	telepathy-gabble
+%package x11
+Summary:        X11 window system support for Plasma 6
+Group:          Graphical desktop/KDE
+Requires:       task-x11
+Requires:       kwin-x11
+Requires:       plasma-workspace-x11
+Requires:       kf6-kwindowsystem-backend-x11
 
-%description telepathy
-This package is a meta-package, meaning that its purpose is to contain
-dependencies for running Telepathy instant messenging in a Plama 5
-desktop environment.
+%description x11
+X11 window system support for Plasma 6
 
-%files telepathy
+%files x11
+
+#----------------------------------------------------------------------------
+
+%package wayland
+Summary:        Wayland window system support for Plasma 6
+Group:          Graphical desktop/KDE
+Requires:       kwin-wayland
+Requires:       plasma-workspace-wayland
+Requires:       kf6-kwindowsystem-backend-wayland
+
+%description wayland
+Wayland window system support for Plasma 6
+
+%files wayland
 
 #----------------------------------------------------------------------------
 
@@ -151,14 +139,7 @@ desktop environment.
 Summary:	Minimal dependencies needed for Plasma 5
 Group:		Graphical desktop/KDE
 # Basic
-%if %omvver > 4050000
-Requires:	kwin-wayland >= %{version}
-Requires:	plasma-workspace-wayland >= %{version}
-%else
-Requires:	task-x11
-Requires:	kwin-x11 >= %{version}
-Requires:	plasma-workspace-x11 >= %{version}
-%endif
+Requires:	(%{name}-wayland = %{EVRD} or %{name}-x11 = %{EVRD})
 Requires:	xsettingsd
 Conflicts:	xsettings-kde
 Requires:	ark
@@ -166,45 +147,42 @@ Requires:	kate
 Requires:	dolphin
 Requires:	konsole
 Requires:	gwenview
-Requires:	pinentry-qt5
+Requires:	pinentry-qt6
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
 # Plasma 5
 Requires:	breeze
 Requires:	breeze-icons
 Requires:	oxygen-sounds
-Requires:	frameworkintegration
+Requires:	kf6-frameworkintegration
 Requires:	kde-cli-tools
-Requires:	kinit
-Requires:	kded
-Requires:	kdeclarative
+Requires:	kf6-kded
+Requires:	kf6-kdeclarative
 Requires:	milou
-Requires:	baloo5
+Requires:	kf6-baloo
 Requires:	plasma-pa
 Requires:	plasma-integration
 Requires:	plasma-desktop >= %{version}
-Requires:	plasma-framework
 Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
 Requires:	kdeplasma-addons
-Requires:	khotkeys
 Requires:	kinfocenter >= 5.8.4
 Requires:	kio-extras
 Requires:	kmenuedit
-Requires:	kscreen5
+Requires:	kscreen
 Requires:	kscreenlocker
-Requires:	kservice
+Requires:	kf6-kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
 Requires:	kwrited
-Requires:	phonon4qt5-backend
+Requires:	phonon4qt6-backend
+Recommends:	phonon4qt6-backend-mpv
 Requires:	plasma-nm
 Requires:	powerdevil >= 5.8.4
 Requires:	systemsettings
-Requires:	solid
+Requires:	kf6-solid
 Requires:	polkit-kde-agent-1
-Requires:	om-user-manager
 Requires:	xdg-desktop-portal-kde
 Requires:	distro-release-desktop
 Suggests:	task-pulseaudio
@@ -223,22 +201,20 @@ minimal dependencies for running a minimal Plama 5 desktop environment.
 Summary:	Minimal set of packages for Plasma Mobile
 Group:		Graphical desktop/KDE
 # Basic
-Requires:	pinentry-qt5
+Requires:	pinentry-qt6
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
-# Plasma 5
+# Plasma 6
 Requires:	breeze
 Requires:	breeze-icons
 Requires:	oxygen-sounds
-Requires:	frameworkintegration
+Requires:	kf6-frameworkintegration
 Requires:	kde-cli-tools
-Requires:	kinit
-Requires:	kded
-Requires:	kdeclarative
+Requires:	kf6-kded
+Requires:	kf6-kdeclarative
 Requires:	plasma-pa
 Requires:	plasma-integration
 Requires:	plasma-desktop >= %{version}
-Requires:	plasma-framework
 Requires:	plasma-vault
 Requires:	plasma-browser-integration
 Requires:	plasma-workspace >= %{version}
@@ -248,14 +224,14 @@ Requires:	plasma-workspace >= %{version}
 # In the mean time, Plasma Mobile without lock screen is
 # usable, so let's not block further testing on this...
 #Conflicts:	kscreenlocker
-Requires:	kservice
+Requires:	kf6-kservice
 Requires:	ksshaskpass
 Requires:	kwalletmanager
-Requires:	phonon4qt5-backend
+Requires:	phonon4qt6-backend
 Requires:	qmlkonsole
 Requires:	plasma-nm
-Requires:	powerdevil >= 5.8.4
-Requires:	solid
+Requires:	powerdevil >= 6.0.0
+Requires:	kf6-solid
 Requires:	polkit-kde-agent-1
 Requires:	xdg-desktop-portal-kde
 Requires:	milou
@@ -263,13 +239,12 @@ Requires:	kconfig
 
 # FIXME at some point, we probably want to support plasma-mobile on X11
 # as well...
-Requires:	kwin-wayland >= %{version}
-Requires:	qt5-qtwayland
+Requires:	%{name}-wayland = %{EVRD}
 
 # Key Plasma Mobile specific bits (stuff that is either
 # required or active in the default config)
 Requires:	plasma-mobile
-Requires:	qt5-qtvirtualkeyboard
+Requires:	%mklibname Qt6VirtualKeyboard
 Requires:	kweather
 Requires:	kclock
 Requires:	angelfish
@@ -293,15 +268,12 @@ Requires:	%{name}-mobile-minimal = %{EVRD}
 Requires:	alligator
 Requires:	spacebar
 Requires:	maui-pix
-Requires:	kaidan
+###Requires:	kaidan
 Requires:	calindori
 Requires:	keysmith
 Requires:	kalk
 Requires:	plasma-phonebook
-#Requires:	plasma-camera
-# plasma-camera is better, but doesn't work (yet) on
-# PinePhone, so let's use a workaround for now
-Suggests:	megapixels
+Requires:	plasma-camera
 Requires:	index-fm
 Requires:	telegram-desktop
 Requires:	qmlkonsole
@@ -321,13 +293,12 @@ Requires:	koko
 Requires:	nota
 Requires:	station
 Requires:	communicator
-#Requires:	kube
 Requires:	itinerary
 Requires:	clip
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain
-the mobile version of the Plasma 5 desktop environment.
+the mobile version of the Plasma desktop environment.
 
 %files mobile
 #----------------------------------------------------------------------------
