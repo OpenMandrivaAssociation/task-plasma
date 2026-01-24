@@ -146,7 +146,7 @@ Requires:	ark
 Requires:	kate
 Requires:	dolphin
 Requires:	konsole
-Requires:	gwenview
+Requires:	nomacs
 Requires:	pinentry-qt6
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
