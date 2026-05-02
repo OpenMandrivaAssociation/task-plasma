@@ -58,7 +58,7 @@ Requires:	kate
 Requires:	kdf
 Requires:	kgamma
 Requires:	kwrite
-Requires:	konversation
+#Requires:	konversation
 Requires:	spectacle
 Requires:	krfb
 Requires:	kwallet-pam
@@ -81,7 +81,7 @@ Requires:	discover
 #Requires:	discover-notifier
 Requires:	discover-backend-packagekit
 Requires:	print-manager
-Requires:	ssr
+#Requires:	ssr
 Requires:	(kde-gtk-config if gtk+-3.0)
 #Requires:	plasma-firewall
 Requires:	plasma-systemmonitor
@@ -146,7 +146,7 @@ Requires:	ark
 Requires:	kate
 Requires:	dolphin
 Requires:	konsole
-Requires:	nomacs
+#Requires:	nomacs
 Requires:	pinentry-qt6
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
