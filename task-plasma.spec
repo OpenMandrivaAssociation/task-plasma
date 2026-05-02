@@ -1,7 +1,7 @@
 Summary:	Metapackage for the Plasma Desktop
 Name:		task-plasma
 Version:	6.5.4
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	%{name}-minimal = %{EVRD}
