@@ -63,7 +63,7 @@ Requires:	spectacle
 Requires:	krfb
 Requires:	kwallet-pam
 Requires:	signon-kwallet-extension
-Requires:	kwave
+Requires:	gwenview
 Requires:	okular
 %ifnarch %{armx}
 Requires:	plymouth-kcm
