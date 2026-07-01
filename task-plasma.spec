@@ -79,7 +79,7 @@ Requires:	khelpcenter
 Requires:	partitionmanager
 Requires:	discover
 #Requires:	discover-notifier
-Requires:	discover-backend-packagekit
+Requires:	discover-backend-dnf
 Requires:	print-manager
 #Requires:	ssr
 Requires:	(kde-gtk-config if gtk+-3.0)
