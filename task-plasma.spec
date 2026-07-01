@@ -283,7 +283,7 @@ Requires:	okular-postscript
 Requires:	okular-epub
 Requires:	okular-kimgio
 Requires:	discover
-Requires:	discover-backend-packagekit
+Requires:	discover-backend-dnf
 Requires:	kscreen
 Requires:	kmix
 Requires:	plasma-pa
